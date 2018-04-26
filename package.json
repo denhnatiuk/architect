@@ -4,7 +4,9 @@
   "description": "template for interior designer`s web site",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp",
+    "dist": "gulp --production"
   },
   "repository": {
     "type": "git",
@@ -24,5 +26,18 @@
   "homepage": "https://github.com/DenysHnatiuk/architect#readme",
   "dependencies": {
     "npm": "^6.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.3.0",
+    "browser-sync": "^2.23.7",
+    "cssnano": "^3.10.0",
+    "graceful-fs": "^4.1.11",
+    "gulp": "^3.9.1",
+    "gulp-bower": "0.0.14",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-util": "^3.0.8",
+    "minimatch": "^3.0.4",
+    "wiredep": "^4.0.0"
   }
 }
