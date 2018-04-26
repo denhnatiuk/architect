@@ -1,0 +1,207 @@
+@font-face {
+  font-family: "ProximaNova-Black";
+  src: url("/fonts/ProximaNova-Black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "ProximaNova-BlackIt";
+  src: url("/fonts/ProximaNova-BlackIt.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "ProximaNova-Bold";
+  src: url("/fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "ProximaNova-BoldIt";
+  src: url("/fonts/ProximaNova-BoldIt.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "ProximaNova-Extrabold";
+  src: url("/fonts/ProximaNova-Extrabold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "ProximaNova-ExtraboldIt";
+  src: url("/fonts/ProximaNova-ExtraboldIt.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "ProximaNova-Light";
+  src: url("/fonts/ProximaNova-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "ProximaNova-LightIt";
+  src: url("/fonts/ProximaNova-LightIt.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "ProximaNova-Regular";
+  src: url("/fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "ProximaNova-RegularIt";
+  src: url("/fonts/ProximaNova-RegularIt.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "ProximaNova-Semibold";
+  src: url("/fonts/ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "ProximaNova-SemiboldIt";
+  src: url("/fonts/ProximaNova-SemiboldIt.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "ProximaNova-Thin";
+  src: url("/fonts/ProximaNova-Thin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "ProximaNova-ThinIt";
+  src: url("/fonts/ProximaNova-ThinIt.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "PT-Serif-Caption-Web-Regular";
+  src: url("/fonts/PT-Serif-Caption-Web-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "PT-Serif-Caption-Web-Italic";
+  src: url("/fonts/PT-Serif-Caption-Web-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Exo2-BlackCondensed";
+  src: url("/fonts/Exo2-BlackCondensed.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Exo2-BlackExpanded";
+  src: url("/fonts/Exo2-BlackExpanded.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Exo2-BoldCondensed";
+  src: url("/fonts/Exo2-BoldCondensed.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Exo2-BoldExpanded";
+  src: url("/fonts/Exo2-BoldExpanded.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Exo2-ExtraBoldCondensed";
+  src: url("/fonts/Exo2-ExtraBoldCondensed.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Exo2-ExtraBoldExpanded";
+  src: url("/fonts/Exo2-ExtraBoldExpanded.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Exo2-ExtraLightCondensed";
+  src: url("/fonts/Exo2-ExtraLightCondensed.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Exo2-ExtraLightExpanded";
+  src: url("/fonts/Exo2-ExtraLightExpanded.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Exo2-LightCondensed";
+  src: url("/fonts/Exo2-LightCondensed.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Exo2-LightExpanded";
+  src: url("/fonts/Exo2-LightExpanded.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Exo2-MediumCondensed";
+  src: url("/fonts/Exo2-MediumCondensed.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Exo2-MediumExpanded";
+  src: url("/fonts/Exo2-MediumExpanded.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Exo2-RegularCondensed";
+  src: url("/fonts/Exo2-RegularCondensed.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Exo2-RegularExpanded";
+  src: url("/fonts/Exo2-RegularExpanded.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Exo2-SemiBoldCondensed";
+  src: url("/fonts/Exo2-SemiBoldCondensed.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Exo2-SemiBoldExpanded";
+  src: url("/fonts/Exo2-SemiBoldExpanded.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Exo2-ThinCondensed";
+  src: url("/fonts/Exo2-ThinCondensed.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Exo2-ThinExpanded";
+  src: url("/fonts/Exo2-ThinExpanded.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+h1 {
+  font-family: 'ProximaNova-Bold';
+  color: #000; }
