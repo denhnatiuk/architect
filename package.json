@@ -1,0 +1,28 @@
+{
+  "name": "architect",
+  "version": "0.0.1",
+  "description": "template for interior designer`s web site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DenysHnatiuk/architect.git"
+  },
+  "keywords": [
+    "design",
+    "architecture",
+    "interior",
+    "design"
+  ],
+  "author": "GRADAZ",
+  "license": "SEE LICENSE IN license.md",
+  "bugs": {
+    "url": "https://github.com/DenysHnatiuk/architect/issues"
+  },
+  "homepage": "https://github.com/DenysHnatiuk/architect#readme",
+  "dependencies": {
+    "npm": "^6.0.0"
+  }
+}
