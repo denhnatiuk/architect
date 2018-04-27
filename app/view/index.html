@@ -20,7 +20,7 @@
         <div class="container navbar-wrapper">
           <div class="navbar-brand">
             <span class="hidden">Anastasia Kovalchuk</span>
-            <img src="/images/logo.png" alt="" class="brand-logo">
+            <img src="/images/logo.png" alt="brand-logo" class="brand-logo">
           </div>
           <div id="primaryMenuTrigger">
             <span class="menu-icon">
@@ -40,15 +40,15 @@
             </script>
           </div>
           <ul id="primaryMenu" class="nav-menu navbar-left">
-            <li class="nav-item">О НАС</li>
-            <li class="nav-item">УСЛУГИ И ЦЕНЫ</li>
-            <li class="nav-item">БЛОГ</li>
-
-            <li class="nav-item">ПОРТФОЛИО</li>
-            <li class="nav-item">КОНТАКТЫ</li>
+            <li class="nav-item"><a href="#">О НАС</a></li>
+            <li class="nav-item"><a href="#">УСЛУГИ И ЦЕНЫ</a></li>
+            <li class="nav-item"><a href="#">БЛОГ</a></li>
+            <li class="nav-item"><a href="#">ПОРТФОЛИО</a></li>
+            <li class="nav-item"><a href="#">КОНТАКТЫ</a></li>
           </ul>
-          <div class="navbar-right">
+          <div id="primaryRight">
             <span class="tel">7(499)499-11-29</span>
+            <span class="email">info@yandex.ru</span>
             <button class="headerModal-trigger" data-toggle="modal" data-target="#headerModal">Заказать звонок</button>
           </div>
         </div>
@@ -58,34 +58,42 @@
         <!-- Modal content-->
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="form-header">Есть вопросы?</h4>
-              <span class="form-header__sub">Всё что нужно сделать это заполнить форму.</span>
+              <h4 class="form-header">СВЯЗАТЬСЯ С НАМИ</h4>
+              <span class="form-header__sub">Оставьте свой номер телефона и мы Вам обязательно перезвоним</span>
               <button type="button" class="modal-escape" data-dismiss="modal">x</button>
             </div>
             <div class="modal-body header-form-container">
-              <div role="form" class="wpcf7" id="wpcf7-f186-o1" lang="ru-RU" dir="ltr">
-                <!-- <div class="screen-reader-response"></div>
-                <form action="/#wpcf7-f186-o1" method="post" class="wpcf7-form" novalidate="novalidate">
-                  <div class="inputgroup">
-                    <input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required text form-input" id="headerFormName" aria-required="true" aria-invalid="false" placeholder="Ваше имя"><label>Ваше имя</label>
-                  </div>
+              <!-- <div class="screen-reader-response"></div> -->
+              <form action="" method="post" class="wpcf7-form" novalidate="novalidate">
                   <div class="inputgroup">
                     <input type="tel" name="number" value="" size="40" minlength="10" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel form-input" id="headerFormPhone" aria-required="true" aria-invalid="false" placeholder="012-345-67-89"><label> Номер телефона  </label>
                   </div>
                   <div class="inputgroup">
-                    <input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email text form-input" id="headerFormEmail" aria-required="true" aria-invalid="false" placeholder="Ваш E-mail"><label> Ваш Email  </label>
+                    <input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required text form-input" id="headerFormName" aria-required="true" aria-invalid="false" placeholder="Ваше имя"><label>Ваше имя</label>
                   </div>
-                  <div class="inputgroup">
-                    <textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea text form-input" id="headerFormMessage" aria-invalid="false" placeholder="Сообщение"></textarea><label> Расскажите нам о своей идее</label>
-                  </div>
-                  <p><input type="submit" value="Отправить" class="wpcf7-form-control wpcf7-submit btn btn-main btn-lg"><span class="ajax-loader"></span></p>
-                  <div class="wpcf7-response-output wpcf7-display-none"></div> -->
+                  <p><input type="submit" value="Заказать консультацию" class="wpcf7-form-control wpcf7-submit btn btn-main btn-lg"></p>
+                  <span class="ajax-loader"></span>
+                  <div class="wpcf7-response-output wpcf7-display-none"></div>
               </form>
             </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="modal fade" id="headerModalResponse" role="dialog">
+        <div class="modal-dialog modal-md">
+        <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="form-header">СПАСИБО!</h4>
+              <span class="form-header__sub">Ваше сообщение было отправлено успешно.</span>
+              <span class="form-header__sub">Мы свяжемся с Вами в ближайшее время!</span>
+              <button type="button" class="modal-escape" data-dismiss="modal">x</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </header>
     <h1>Test</h1>
     <footer class="site-footer">

@@ -1,0 +1,23 @@
+#headerModal .modal-content, #headerModalResponse .modal-content{
+  background-image: url(../images/modal-bg.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+
+
+@media screen and (max-width:767px) {
+  #primaryMenuTrigger.open ~ #primaryRight{
+    & .tel:before{
+      font-family: "Glyphicons Halflings";
+      content: '\e182';
+      margin-right: 10px;
+    }
+    & .email:before{
+      font-family: "Glyphicons Halflings";
+      content: '\2709';
+      margin-right: 10px;
+    }
+  }
+}

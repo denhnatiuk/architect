@@ -2,7 +2,61 @@ $dark: #1a171b;
 $inactive: #646265;
 $hover: #e8d7bb;
 
-.navbar-fixed-top, .navbar-wrapper, #primaryMenu{
+
+a{
+  color: #fff;
+  &:hover{
+    color: $hover;
+  }
+}
+/***header**/
+.navbar-fixed-top, .navbar-wrapper, #primaryMenu, #primaryRight{
   background-color: $dark;
   color: #fff;
 }
+#headerModal .modal-content{
+  color: #fff;
+  & .modal-escape{
+    background-color: inherit;
+    border: 0;
+    &:hover{
+      color: $hover;
+    }
+  }
+  & input{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+  }
+  & input[type=submit]{
+    border: 0;
+    background-color: $hover;
+    color: $dark;
+  }
+}
+#headerModalResponse .modal-content{
+  color: #fff;
+  & .modal-escape{
+    background-color: inherit;
+    border: 0;
+    &:hover{
+      color: $hover;
+    }
+  }
+}
+@media screen and (max-width:767px) {
+  #primaryMenuTrigger.open ~ #primaryMenu .nav-item:hover{
+    background-color: $hover;
+    color: $dark;
+  }
+  #primaryMenuTrigger.open ~ #primaryRight{
+    & .tel:before{
+      color: $hover;
+    }
+    & .email:before{
+      color: $hover;
+    }
+  }
+}
+
+/***END header**/
