@@ -60,3 +60,29 @@ a{
 }
 
 /***END header**/
+.btn-arrow{
+  border: 1px solid $hover;
+  background-color: inherit;
+  -webkit-box-shadow: inset 0px 0px 10px 1px rgba(232,215,187,1), 0px 0px 10px 1px rgba(232,215,187,1);
+  -moz-box-shadow: inset 0px 0px 10px 1px rgba(232,215,187,1), 0px 0px 10px 1px rgba(232,215,187,1);
+  box-shadow: inset 0px 0px 10px 1px rgba(232,215,187,1), 0px 0px 10px 1px rgba(232,215,187,1);
+  &:after{
+    color: $hover;
+    background-color: #fff;
+  }
+}
+/***footer**/
+.site-footer{}
+.section.contacts{
+  & .contacts-wrapper{
+    background-color: #fff;
+    & h2{}
+    & .contacts-list{}
+    & .btn-arrow{}
+    & .social{}
+  }
+}
+.footer{
+  background-color: $dark;
+}
+/***END footer**/

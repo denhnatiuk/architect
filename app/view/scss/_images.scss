@@ -1,12 +1,10 @@
+/***header**/
 #headerModal .modal-content, #headerModalResponse .modal-content{
   background-image: url(../images/modal-bg.png);
   background-position: top;
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
-
-
-
 @media screen and (max-width:767px) {
   #primaryMenuTrigger.open ~ #primaryRight{
     & .tel:before{
@@ -21,3 +19,21 @@
     }
   }
 }
+/***END header**/
+.btn-arrow{
+  position: relative;
+  &:after{
+    content: "\27F6";
+    display: inline;
+    position: absolute;
+    right:-10px;
+  }
+}
+/***footer**/
+
+.social-link.instagram{}
+.social-link.facebook{}
+.social-link.houzz{}
+.social-link.pinterest{}
+.social-link.archiprofi{}
+/***END footer**/
