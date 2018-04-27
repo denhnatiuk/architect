@@ -90,5 +90,25 @@ a{
 }
 /***END header**/
 /***footer**/
-
+.section.contacts{
+  & .contacts-wrapper{
+    & h2{
+      font-family: "Exo2-MediumCondensed";
+      font-size: 2.222rem;
+      line-height: 1.667rem;
+    }
+    & .contacts-list{
+      list-style-type: none;
+      & .social-link{
+        & address{
+          font-family: "Exo2-LightCondensed";
+          font-size: 1rem;
+          line-height: 1.667rem;
+        }
+      }
+    }
+    & .btn-arrow{}
+    & .social{}
+  }
+}
 /***END footer**/
