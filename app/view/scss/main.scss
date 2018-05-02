@@ -504,32 +504,212 @@
 .btn-arrow{
   padding: 15px 30px;
 }
+.row.section{
+  .container{
+  padding-top: 50px;
+  position: relative;
+  &:before{
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left:-124px;
+    right:-136px;
+    top:0;
+    bottom: 0;
+    }
+  }
+}
+.section.about-us>.container>div:first-child{
+  position: relative;
+  z-index: 3;
+  & .brand-photo{
+    position: relative;
+    z-index: 1;
+    margin: 100px 0 100px 180px;
+  }
+  & .btn-logo{
+    display: block;
+    position: absolute;
+    left:10px;
+    right:10px;
+    bottom:80px;
+    z-index: 2;
+    width:200px;
+    height:200px;
+    border: 0;
+  }
+  & #aboutUsVideo{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    bottom:60px;
+    z-index: 2;
+    &.hidden{
+      display: none;
+    }
+  }
+}
+.section.about-us>.container>div:last-child{
+  padding: 72px;
+  & .awards img{
+    width: 83px;
+    height: 83px;
+    margin: 30px 15px 30px 0;
+  }
+  & .btn-arrow{
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 80%;
+  }
+}
+/***section purposes***/
+.purposes{
+  & .purposes-header{
+    display: block;
+    // width:150%;
+  }
+  & .purposes-list{
+    list-style-type: none;
+    padding: 0;
+    & .purposes-item{
+      box-sizing: border-box;
+      padding: 2px 0;
+      margin-bottom: 1px;
+      height: 100px;
+      &:first-child .purposes-item--header:before{
+        content:'01';
+      }
+      &:nth-child(2) .purposes-item--header:before{
+        content:'02';
+      }
+      &:nth-child(3) .purposes-item--header:before{
+        content:'03';
+      }
+      &:nth-child(4) .purposes-item--header:before{
+        content:'04';
+      }
+      &:last-child .purposes-item--header:before{
+        content:'05';
+      }
+      & .purposes-item--header{
+        &:before{
+          display: inline-block;
+          margin: 0 30px;
+          width: 52px;
+          height: 52px;
+          box-sizing: border-box;
+          padding: 10px 10px 10px 13px;
+          line-height: 30px;
+          border-radius: 50%;
+          height: 3rem;
+          float: left;
+        }
+      }
+    }
+  }
+  & .purposes-item--description-wrapper{
+    position: relative;
+    min-height: 700px;
+    & .purposes-item--description{
+      &>div{
+        visibility: hidden;
+        &.visible{
+          visibility: visible;
+        }
+      }
+      & p{
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left:30px;
+        z-index: 2;
+        width:500px;
+        padding: 40px;
+      }
+      & .purposes-image{
+        position: absolute;
+        top:145px;
+        right:-50%;
+        width: 125%;
+        z-index: -1;
+      }
+    }
+  }
+}
+/***END section purposes***/
+
 /***footer**/
 .site-footer{}
+#map{
+  position: absolute;
+  z-index: 1;
+  width:100%;
+  height:575px;
+}
 .section.contacts{
+  position: relative;
   & .contacts-wrapper{
-    // width:550px;
-    // height:550px;
-    margin-left: 50%;
-    & h2{}
+    // position: absolute;
+    position: relative;
+    float: right;
+    top:0;
+    z-index: 5;
+    width:560px;
+    height:575px;
+    padding: 55px 100px;
+    & h2{
+      margin: 40px 0;
+    }
     & .contacts-list{
       list-style-type: none;
-      & .social-link{
-        
+      padding: 0;
+      margin-bottom: 40px;
+      & .contacts-item{
+        margin: 14px 0;
+      }
+      & .address{
+        margin: 0;
+        &:before{
+          margin-right: 1rem;
+        }
+      }
+      & .tel{
+        &:before{
+          margin-right: 1rem;
+        }
+      }
+      & .email{
+        &:before{
+          margin-right: 1rem;
+        }
       }
     }
     & .btn-arrow{}
-    & .social{}
+    & .social{
+      margin-top: 100px;
+      & .social-link{
+        padding: 0.25rem;
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 0.5rem;
+      }
+    }
   }
 }
 .footer{
   height: 100px;
+  overflow: visible;
   & .navbar-brand{
     position: relative;
     padding: 0;
     & .brand-logo{
       margin-top: -20px;
       height: 120px;
+      z-index: 2;
+      position: relative;
     }
   }
   & #footerMenu{

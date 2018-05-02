@@ -29,6 +29,48 @@
     right:-10px;
   }
 }
+.section.about-us{
+  overflow: visible;
+}
+.section.about-us{
+  background-image: url(../images/architect.png);
+  background-repeat: no-repeat;
+  background-position: right 30px bottom;
+  background-size: 45%;
+  z-index: 2;
+  & .btn-logo{
+    background: url(../images/logo-transparent.png), url(../images/play-button.png), linear-gradient(to bottom, #1a171b, #1a171b );
+    background-position: top 50px center, bottom 30px center, center;
+    background-size: 60%, 10%, contain;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+      background-size: 60%, 15%, contain;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
+/***section purposes***/
+.purposes{
+  & .purposes-header{}
+  & .purposes-list{
+    list-style-type: none;
+    & .purposes-item{
+      & .purposes-item--header{
+        display: block;
+        &:before{
+          display: inline-block;
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+  & .purposes-item--description{
+
+  }
+}
+/***END section purposes***/
+
 /***footer**/
 
 .social-link.instagram{}

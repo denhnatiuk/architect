@@ -95,10 +95,248 @@
       </div>
 
     </header>
-    <h1>Test</h1>
+    <div class="container-fluid  main-content">
+      <div class="row section about-us">
+        <div class="container">
+          <div class="col-xs-12 col-xs-push-0 col-md-6 col-md-push-6 ">
+            <img src="/images/brand-photo.png" alt="Anastasia Kovalchuk" class="brand-photo">
+            <button type="button" name="aboutUsVideoTrigger" id="aboutUsVideoTrigger" class="btn-logo brand-logo"></button>
+            <script>
+              var trigger = document.getElementById('aboutUsVideoTrigger');
+              trigger.addEventListener ('click', function (){
+                var videoFrame = document.getElementById('aboutUsVideo');
+                videoFrame.className = '';
+              });
+            </script>
+            <iframe id="aboutUsVideo" width="100%" height="100%" class="hidden" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1"></iframe>
+          </div>
+          <div class="col-xs-12 col-xs-pull-0 col-md-6 col-md-pull-6">
+            <h2 class="section-header about-us--header">КТО МЫ ТАКИЕ</h2>
+            <p class="about-us--description">Анастасия - квалифицированный специалист в сфере архитектуры и дизайна. Выпускница инженерно-архитектурного факультета МГСУ. Архитектурным проектированием занимается на профессиональном уровне, но главное, что в каждом проекте она находит место для самых смелых творческих замыслов. Для Анастасии дизайн - это не только эстетика. Прежде всего это фуункциональность. Поэтому она предпочитает каждую дизайнерскую выдумку "оправдывать" её практичностью и удобством.</p>
+            <div class="awards">
+              <img src="/images/award1.png" alt="">
+              <img src="/images/award2.png" alt="">
+            </div>
+            <a href="#" class="btn-lg btn-arrow">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</a>
+          </div>
+        </div>
+      </div>
+      <div class="row section purposes">
+        <div class="container">
+          <div class="col-xs-12 col-md-4">
+            <h2 class="section-header purposes-header">ЧТО МЫ ПРЕДЛАГАЕМ</h2>
+            <ul class="purposes-list">
+              <li class="purposes-item">
+                <h3 class="purposes-item--header">Дизайн проект</h3>
+              </li>
+              <li class="purposes-item">
+                <h3 class="purposes-item--header">Ремонтно-строительные работы</h3>
+              </li>
+              <li class="purposes-item">
+                <h3 class="purposes-item--header">Авторское сопровождение</h3>
+              </li>
+              <li class="purposes-item">
+                <h3 class="purposes-item--header">Комплектация объекта</h3>
+              </li>
+              <li class="purposes-item">
+                <h3 class="purposes-item--header">Дизайн интерьера "под ключ"</h3>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-md-8 purposes-item--description-wrapper">
+            <div class="purposes-item--description">
+              <div class="purpose-item visible">
+                <p>(1)Дизайн-студия осуществляет капитальный ремонт любой сложности всех типов помещений. Дом, квартира, офис, ресторан, кафе, салон красоты и другие объекты преобразования.
+                  <a href="#" class="purposes-item--more">Читать подробнее</a>
+                </p>
+                <img src="/images/purposes-1.png" alt="Дизайн проект" class="purposes-image">
+              </div>
+              <div class="purpose-item">
+                <p>(2)Дизайн-студия осуществляет капитальный ремонт любой сложности всех типов помещений. Дом, квартира, офис, ресторан, кафе, салон красоты и другие объекты преобразования.
+                  <a href="#" class="purposes-item--more">Читать подробнее</a>
+                </p>
+                <img src="/images/purposes-2.png" alt="Дизайн проект" class="purposes-image">
+              </div>
+              <div class="purpose-item">
+                <p>(3)Дизайн-студия осуществляет капитальный ремонт любой сложности всех типов помещений. Дом, квартира, офис, ресторан, кафе, салон красоты и другие объекты преобразования.
+                  <a href="#" class="purposes-item--more">Читать подробнее</a>
+                </p>
+                <img src="/images/purposes-3.png" alt="Дизайн проект" class="purposes-image">
+              </div>
+              <div class="purpose-item">
+                <p>(4)Дизайн-студия осуществляет капитальный ремонт любой сложности всех типов помещений. Дом, квартира, офис, ресторан, кафе, салон красоты и другие объекты преобразования.
+                  <a href="#" class="purposes-item--more">Читать подробнее</a>
+                </p>
+                <img src="/images/purposes-4.png" alt="Дизайн проект" class="purposes-image">
+              </div>
+              <div class="purpose-item">
+                <p>(5)Дизайн-студия осуществляет капитальный ремонт любой сложности всех типов помещений. Дом, квартира, офис, ресторан, кафе, салон красоты и другие объекты преобразования.
+                  <a href="#" class="purposes-item--more">Читать подробнее</a>
+                </p>
+                <img src="/images/purposes-1.png" alt="Дизайн проект" class="purposes-image">
+              </div>
+            </div>
+            <script>
+              var purposes = document.querySelectorAll('.purposes-item');
+              var description = document.querySelectorAll('.purpose-item');
+              purposes[0].addEventListener('click', function(){
+                if (purposes[0].classList !== 'purposes-item active') {
+                   purposes[0].classList += ' active';
+                   purposes[1].classList = 'purposes-item';
+                   purposes[2].classList = 'purposes-item';
+                   purposes[3].classList = 'purposes-item';
+                   purposes[4].classList = 'purposes-item';
+                   description[0].classList = 'purpose-item visible';
+                   description[1].classList = 'purpose-item';
+                   description[2].classList = 'purpose-item';
+                   description[3].classList = 'purpose-item';
+                   description[4].classList = 'purpose-item';
+                } else {
+                  description[0].classList += ' visible';
+                }
+              });
+              purposes[1].addEventListener('click', function(){
+                if (purposes[1].classList !== 'purposes-item active') {
+                  purposes[0].classList = 'purposes-item';
+                  purposes[1].classList += ' active';
+                  purposes[2].classList = 'purposes-item';
+                  purposes[3].classList = 'purposes-item';
+                  purposes[4].classList = 'purposes-item';
+                  description[0].classList = 'purpose-item';
+                  description[1].classList = 'purpose-item visible';
+                  description[2].classList = 'purpose-item';
+                  description[3].classList = 'purpose-item';
+                  description[4].classList = 'purpose-item';
+                } else {
+                  description[1].classList += ' visible';
+                }
+              });
+              purposes[2].addEventListener('click', function(){
+                if (purposes[2].classList !== 'purposes-item active') {
+                  purposes[0].classList = 'purposes-item';
+                  purposes[2].classList += ' active';
+                  purposes[1].classList = 'purposes-item';
+                  purposes[3].classList = 'purposes-item';
+                  purposes[4].classList = 'purposes-item';
+                  description[0].classList = 'purpose-item';
+                  description[1].classList = 'purpose-item';
+                  description[2].classList = 'purpose-item visible';
+                  description[3].classList = 'purpose-item';
+                  description[4].classList = 'purpose-item';
+                } else {
+                  description[2].classList += ' visible';
+                }
+              });
+              purposes[3].addEventListener('click', function(){
+                if (purposes[3].classList !== 'purpose-item visible') {
+                  purposes[0].classList = 'purposes-item';
+                  purposes[3].classList += ' active';
+                  purposes[1].classList = 'purposes-item';
+                  purposes[2].classList = 'purposes-item';
+                  purposes[4].classList = 'purposes-item';
+                  description[0].classList = 'purpose-item';
+                  description[1].classList = 'purpose-item';
+                  description[2].classList = 'purpose-item';
+                  description[3].classList = 'purpose-item visible';
+                  description[4].classList = 'purpose-item';
+                } else {
+                  description[3].classList += ' visible';
+                }
+              });
+              purposes[4].addEventListener('click', function(){
+                if (purposes[4].classList !== 'purpose-item visible') {
+                  purposes[0].classList = 'purposes-item';
+                  purposes[4].classList += ' active';
+                  purposes[1].classList = 'purposes-item';
+                  purposes[2].classList = 'purposes-item';
+                  purposes[3].classList = 'purposes-item';
+                  description[0].classList = 'purpose-item';
+                  description[1].classList = 'purpose-item';
+                  description[2].classList = 'purpose-item';
+                  description[3].classList = 'purpose-item';
+                  description[4].classList = 'purpose-item visible';
+                } else {
+                  description[4].classList += ' visible';
+                }
+              });
+              // TODO: сделать цикл
+              // for (var i = 0; i < description.length; i++){
+              //   for (var i = 0; i < purposes.length; i++){
+              //     purposes[i].addEventListener('click', function(){
+              //       description[i].classList += 'visible';
+              //     });
+              //   }
+              // }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer class="site-footer">
       <div class="section contacts">
-        <div id="map"></div>
+        <div id="map">
+          <script>
+              function initMap() {
+                var uluru = {lat: 55.74811, lng: 37.7644236};
+                var mapCenter = {lat: 55.74811, lng: 37.7664236};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 18,
+                  center: mapCenter
+              });
+              // var gradazMarker = {
+              //     path: 'M256,0C153.755,0,70.573,83.182,70.573,185.426c0,126.888,165.939,313.167,173.004,321.035    c6.636,7.391,18.222,7.378,24.846,0c7.065-7.868,173.004-194.147,173.004-321.035C441.425,83.182,358.244,0,256,0z M256,278.719    c-51.442,0-93.292-41.851-93.292-93.293S204.559,92.134,256,92.134s93.291,41.851,93.291,93.293S307.441,278.719,256,278.719z',
+              //     fillColor: '#fabe1a',
+              //     fillOpacity: 0.8,
+              //     scale: 0.1,
+              //     strokeColor: 'gold',
+              //     strokeWeight: 1
+              // };
+              var marker = new google.maps.Marker({
+                  position: uluru,
+                  // icon: gradazMarker,
+                  map: map
+              });
+              var customStyled = [
+              {
+                "featureType": "poi",
+                "elementType": "labels.text",
+                "stylers": [
+                  {
+                    "visibility": "off"
+                  }
+                ]
+              },
+              {
+                "featureType": "poi.business",
+                "stylers": [
+                  {
+                    "visibility": "off"
+                  }
+                ]
+              },
+              {
+                "featureType": "road",
+                "elementType": "labels.icon",
+                "stylers": [
+                  {
+                    "visibility": "off"
+                  }
+                ]
+              },
+              {
+                "featureType": "transit",
+                "stylers": [
+                  {
+                    "visibility": "off"
+                  }
+                ]
+              }
+            ];
+            map.set('styles',customStyled);
+              }
+          </script>
+          <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNAatENUDbw8EQgvqRGtz2H30HID3-m_4&callback=initMap"></script>
+        </div>
         <div class="container">
           <div class="contacts-wrapper">
             <h2 class="contacts-header">КОНТАКТЫ</h2>
@@ -124,7 +362,12 @@
               <a href="#" class="social-link houzz"></a>
               <a href="#" class="social-link pinterest"></a>
               <a href="#" class="social-link archiprofi">
-
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 300.000000 300.000000" preserveAspectRatio="xMidYMid meet">
+                <g transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)">
+                <path d="M845 1508 c-258 -706 -471 -1289 -473 -1295 -3 -10 44 -13 216 -13 l220 0 901 382 901 383 0 231 0 232 -191 -80 c-105 -43 -194 -77 -197 -74 -3 3 -130 345 -282 758 l-276 753 -175 3 -175 2 -469 -1282z m920 -107 c66 -195 115 -356 110 -358 -6 -2 -208 -88 -450 -192 -242 -103 -441 -184 -443 -180 -3 7 463 1357 510 1479 11 27 23 -6 273 -749z"/>
+                <path d="M2243 631 c-101 -43 -185 -80 -189 -84 -3 -3 20 -83 51 -176 l57 -171 224 0 c123 0 224 2 224 5 0 5 -180 499 -183 502 -1 0 -84 -34 -184 -76z"/>
+                </g>
+                </svg>
               </a>
             </div>
           </div>

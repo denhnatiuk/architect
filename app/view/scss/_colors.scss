@@ -60,6 +60,20 @@ a{
 }
 
 /***END header**/
+.row.section>.container{
+  &:before{
+    background:
+      url('data:image/svg+xml;utf-8,<?xml version="1.0" encoding="iso-8859-1"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5 100" stroke="#e8d7bb"><path d="M2 0v45"/><path stroke-width="2" d="M2 45v10"/><path d="M2 55v45"/></svg>'),
+      url('data:image/svg+xml;utf-8,<?xml version="1.0" encoding="iso-8859-1"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5 100" stroke="#e8d7bb"><path d="M2 0v25"/><path stroke-width="2" d="M2 25v10"/><path d="M2 35v65"/></svg>'),
+      url('data:image/svg+xml;utf-8,<?xml version="1.0" encoding="iso-8859-1"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5 100" stroke="#e8d7bb"><path d="M2 0v15"/><path stroke-width="2" d="M2 15v10"/><path d="M2 25v95"/></svg>');
+    background-repeat:repeat-y;
+    background-position:left, center, right;
+    background-size:300px 300px;
+  }
+  & .btn-arrow{
+    color: #000;
+  }
+}
 .btn-arrow{
   border: 1px solid $hover;
   background-color: inherit;
@@ -69,8 +83,64 @@ a{
   &:after{
     color: $hover;
     background-color: #fff;
+    text-shadow: 0px 1px 10px rgba(232,215,187,1), 0px -1px 10px rgba(232,215,187,1);
   }
 }
+/***section purposes***/
+.purposes{
+  // background-color: #fbfbfb;
+  & .purposes-header{}
+  & .purposes-list{
+    list-style-type: none;
+    & .purposes-item{
+      position: relative;
+        &.active:before{
+          content: '';
+          position: absolute;
+          top: -1px;
+          left: -1px;
+          right: -1px;
+          bottom: -1px;
+          background-image: -webkit-gradient(radial, left top, 10, 90% 0%, 150, from(#000), to(transparent));
+          background-image: -webkit-radial-gradient(left top, 150px 230px, #000, transparent);
+          background-image: -moz-radial-gradient(left top, farthest-corner, #000 0%, transparent 72%);
+          z-index: -2;
+        }
+        &.active:after{
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          background: #fff;
+          z-index: -1;
+        }
+      & .purposes-item--header{
+        display: block;
+        &:before{
+          background: inherit;
+          color: $inactive;
+        }
+        &:hover:before{
+          background-color: $hover;
+          color: $dark;
+        }
+      }
+    }
+  }
+  & .purposes-item--description{
+    &  p{
+      background-color: $dark;
+      color: #fff;
+    }
+    & .purposes-image{
+
+    }
+  }
+}
+/***END section purposes***/
+
 /***footer**/
 .site-footer{}
 .section.contacts{
@@ -79,7 +149,19 @@ a{
     & h2{}
     & .contacts-list{}
     & .btn-arrow{}
-    & .social{}
+    & .social{
+      & .social-link{
+        color:#000;
+        border: 1px solid #000;
+        &:hover{
+          color: $hover;
+          border: 1px solid $hover;
+        }
+        &:hover svg{
+          fill: $hover;
+        }
+      }
+    }
   }
 }
 .footer{

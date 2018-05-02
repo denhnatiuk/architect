@@ -29,7 +29,7 @@ a{
 }
 #headerModal .modal-content{
   & .form-header{
-    font-family: "PT-Serif-Caption-Web-Regular";
+    font-family: "PT_Serif-Caption-Web-Regular";
     font-size: 2.222rem;
     line-height: 2.944em;
     text-align: center;
@@ -89,6 +89,53 @@ a{
   }
 }
 /***END header**/
+.section.about-us{
+  & .section-header.about-us--header{
+    font-family: "PT-Serif-Caption-Web-Regular";
+    font-size: 2.222rem;
+    line-height: 1.944em;
+  }
+  & .about-us--description{
+    font-family: "ProximaNova-Light";
+    font-size: 1rem;
+    font-weight: normal;
+    line-height:  1.667rem;
+  }
+}
+/***section purposes***/
+.purposes{
+  & .purposes-header{
+    font-family: "PT-Serif-Caption-Web-Regular";
+    font-size: 2.222rem;
+    line-height: 3.222rem;
+  }
+  & .purposes-list{
+    list-style-type: none;
+    & .purposes-item{
+      & .purposes-item--header{
+        font-family: "Exo2-MediumCondensed";
+        font-size: 1.222rem;
+        line-height: 1.622rem;
+        text-align: left;
+        &:before{
+          font-size:  1.389rem;
+          line-height: 2rem;
+        }
+      }
+      &:first-child .purposes-item--header{
+        line-height: 2.822rem;
+      }
+      &:nth-child(4) .purposes-item--header{
+        line-height: 2.822rem;
+      }
+    }
+  }
+  & .purposes-item--description{
+
+  }
+}
+/***END section purposes***/
+
 /***footer**/
 .section.contacts{
   & .contacts-wrapper{
@@ -98,17 +145,87 @@ a{
       line-height: 1.667rem;
     }
     & .contacts-list{
-      list-style-type: none;
-      & .social-link{
-        & address{
-          font-family: "Exo2-LightCondensed";
+      & .address{
+        font-family: "Exo2-LightCondensed";
+        font-size: 0.889rem;
+        line-height: 1.667rem;
+        &:before{
+          content: '\f041';
+          font-family: FontAwesome;
+          font-style: normal;
+          font-weight: normal;
           font-size: 1rem;
-          line-height: 1.667rem;
+        }
+      }
+      & .tel{
+        font-family: "Exo2-MediumCondensed";
+        font-size: 1rem;
+        line-height: 1.667rem;
+        &:before{
+          content: '\f095';
+          font-family: FontAwesome;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 1rem;
+        }
+      }
+      & .email{
+        font-family: "Exo2-LightCondensed";
+        font-size: 0.889rem;
+        line-height: 1.667rem;
+        &:before{
+          font-family: FontAwesome;
+          content: '\f0e0';
+          font-style: normal;
+          font-weight: normal;
+          font-size: 1rem;
         }
       }
     }
     & .btn-arrow{}
-    & .social{}
+    & .social{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: flex-start;
+      & .social-link{
+        line-height: 1rem;
+        font-size: 1rem;
+        text-align: center;
+        &.instagram:before{
+          content: '\f16d';
+          font-family: FontAwesome;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 1rem;
+        }
+        &.facebook:before{
+          content: '\f09a';
+          font-family: FontAwesome;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 1rem;
+        }
+        &.houzz:before{
+          content: '\f27c';
+          font-family: FontAwesome;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 1rem;
+        }
+        &.pinterest:before{
+          content: '\f231';
+          font-family: FontAwesome;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 1rem;
+        }
+        &.archiprofi:before{
+
+        }
+      }
+    }
   }
 }
 /***END footer**/

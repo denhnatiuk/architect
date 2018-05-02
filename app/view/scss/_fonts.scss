@@ -40,8 +40,8 @@ $exo2-collection:(
 }
 @each $font in $pt-serif-caption-web-collection {
     @font-face {
-      font-family: 'PT-Serif-Caption-Web-#{$font}';
-      src: url("/fonts/PT-Serif-Caption-Web-#{$font}.ttf") format("truetype");
+      font-family: 'PT_Serif-Caption-Web-#{$font}';
+      src: url("/fonts/PT_Serif-Caption-Web-#{$font}.ttf") format("truetype");
       font-weight: normal;
       font-style: normal;
     }
