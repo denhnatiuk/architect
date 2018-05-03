@@ -3,6 +3,13 @@ html{
   font-size: 18px;
   line-height: 1.667rem;
 }
+@media screen and (max-width:767px) {
+  html{
+    font-family: "ProximaNova-Light";
+    font-size: 16px;
+    line-height: 1.667rem;
+  }
+}
 a{
   cursor: pointer;
   &:hover{
@@ -89,6 +96,68 @@ a{
   }
 }
 /***END header**/
+.top-slider{
+  & .multi-item-carousel{
+    & .item.active{
+      & .slide-header{
+        font-family: 'ProximaNova-Semibold';
+        font-size: 3.333rem;
+        text-align: center;
+      }
+      & .brick-title{
+        text-transform: uppercase;
+        font-size: 0.8333rem;
+        line-height: 1.278rem;
+        text-align: center;
+      }
+    }
+    & .carousel-control{}
+  }
+  & .social{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    & .social-link{
+      line-height: 1rem;
+      font-size: 1rem;
+      text-align: center;
+      &.instagram:before{
+        content: '\f16d';
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+      }
+      &.facebook:before{
+        content: '\f09a';
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+      }
+      &.houzz:before{
+        content: '\f27c';
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+      }
+      &.pinterest:before{
+        content: '\f231';
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+      }
+      &.archiprofi:before{
+
+      }
+    }
+  }
+}
+/****************************/
 .section.about-us{
   & .section-header.about-us--header{
     font-family: "PT-Serif-Caption-Web-Regular";
@@ -100,6 +169,21 @@ a{
     font-size: 1rem;
     font-weight: normal;
     line-height:  1.667rem;
+  }
+}
+@media screen and (max-width:767px) {
+  .section.about-us{
+    & .section-header.about-us--header{
+      font-family: "PT-Serif-Caption-Web-Regular";
+      font-size: 1.313rem;
+      line-height: 1.944em;
+    }
+    & .about-us--description{
+      font-family: "ProximaNova-Light";
+      font-size: 1rem;
+      font-weight: normal;
+      line-height:  1.667rem;
+    }
   }
 }
 /***section purposes***/

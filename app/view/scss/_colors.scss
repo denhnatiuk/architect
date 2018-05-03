@@ -60,6 +60,54 @@ a{
 }
 
 /***END header**/
+.top-slider{
+  & .multi-item-carousel{
+            color:#fff;
+    & .carousel-control{
+      border: 1px solid #fff;
+      &.right:before{
+        content:'';
+        display: block;
+        width: 0px;
+        height: 0px;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-left: 8px solid #fff;
+        margin: 10px 12px;
+      }
+      &.left:before{
+        content:'';
+        display: block;
+        width: 0px;
+        height: 0px;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-right: 8px solid #fff;
+        margin: 10px 12px;
+      }
+    }
+  }
+  & .container{
+    & .social{
+      & .social-link{
+        color:#fff;
+        border: 1px solid #fff;
+        & svg{
+          fill:#fff;
+        }
+        &:hover{
+          color: $hover;
+          border: 1px solid $hover;
+        }
+        &:hover svg{
+          fill: $hover;
+        }
+      }
+    }
+  }
+}
+
+/*************/
 .row.section>.container{
   &:before{
     background:
@@ -74,6 +122,13 @@ a{
     color: #000;
   }
 }
+@media screen and (max-width:767px) {
+  .row.section>.container{
+    &:before{
+      background: #fff;
+    }
+  }
+}
 .btn-arrow{
   border: 1px solid $hover;
   background-color: inherit;
@@ -85,6 +140,13 @@ a{
     background-color: #fff;
     text-shadow: 0px 1px 10px rgba(232,215,187,1), 0px -1px 10px rgba(232,215,187,1);
   }
+}
+.btn-main{
+  border: 1px solid $hover;
+  background-color: inherit;
+  -webkit-box-shadow: inset 0px 0px 10px 1px rgba(232,215,187,1), 0px 0px 10px 1px rgba(232,215,187,1);
+  -moz-box-shadow: inset 0px 0px 10px 1px rgba(232,215,187,1), 0px 0px 10px 1px rgba(232,215,187,1);
+  box-shadow: inset 0px 0px 10px 1px rgba(232,215,187,1), 0px 0px 10px 1px rgba(232,215,187,1);
 }
 /***section purposes***/
 .purposes{
@@ -101,9 +163,9 @@ a{
           left: -1px;
           right: -1px;
           bottom: -1px;
-          background-image: -webkit-gradient(radial, left top, 10, 90% 0%, 150, from(#000), to(transparent));
-          background-image: -webkit-radial-gradient(left top, 150px 230px, #000, transparent);
-          background-image: -moz-radial-gradient(left top, farthest-corner, #000 0%, transparent 72%);
+          background-image: -webkit-gradient(radial, left top, 10, 90% 0%, 150, from($inactive), to(transparent));
+          background-image: -webkit-radial-gradient(left top, 150px 230px, $inactive, transparent);
+          background-image: -moz-radial-gradient(left top, farthest-corner, $inactive 0%, transparent 72%);
           z-index: -2;
         }
         &.active:after{
@@ -126,6 +188,10 @@ a{
           background-color: $hover;
           color: $dark;
         }
+      }
+      &.active .purposes-item--header:before{
+          background-color: $hover;
+          color: $dark;
       }
     }
   }
@@ -166,5 +232,16 @@ a{
 }
 .footer{
   background-color: $dark;
+}
+@media screen and (max-width:767px) {
+  .section.contacts{
+    & .contacts-wrapper .social .social-link{
+      color: #fff;
+      border: 1px solid #fff;
+      & svg{
+        fill: #fff;
+      }
+    }
+  }
 }
 /***END footer**/

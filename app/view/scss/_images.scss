@@ -50,6 +50,15 @@
     }
   }
 }
+@media screen and (max-width:767px) {
+  .section.about-us{
+    background-image: url(../images/architect.png);
+    background-repeat: no-repeat;
+    background-position: right -150px top 65px;
+    background-size: 100%;
+    z-index: 2;
+  }
+}
 /***section purposes***/
 .purposes{
   & .purposes-header{}
