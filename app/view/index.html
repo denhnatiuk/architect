@@ -12,7 +12,22 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/main.css">
     <!-- scripts -->
-
+    <style media="screen">
+      .grid-sizer{
+        width:6.25%;
+        heigth:70px;
+        /* width:70px;
+        height:70px; */
+        /* margin:15px; */
+      }
+      .grid-item {
+        width:6.24%;
+        heigth:70px;
+        /* width:12.5%;
+        height: 180px;
+        margin:15px; */
+      }
+    </style>
   </head>
   <body>
     <header class="site-header">
@@ -287,6 +302,7 @@
       <div class="row section about-us">
         <div class="container">
           <div class="col-xs-12 col-md-6">
+            <span class="section-header--sup">01</span>
             <h2 class="section-header about-us--header">КТО МЫ ТАКИЕ</h2>
             <div class="about-us--media">
               <img src="/images/brand-photo.png" alt="Anastasia Kovalchuk" class="brand-photo">
@@ -469,6 +485,325 @@
           </div>
         </div>
       </div>
+      <div class="row section instafeed">
+        <div class="container">
+          <div class="instafeed-header">
+            <span class="section-header--sup">03</span>
+            <h2 class="section-header instafeed-title">Мы есть <br> в INSTAGRAM</h2>
+            <button class="btn-arrow btn-lg">ПОДПИСАТЬСЯ</button>
+          </div>
+          <div class="masonry-wrapper">
+            <div class="masonry">
+              <div id="instafeed" class="grid js-masonry">
+                <!-- TODO://  url:https://github.com/pgrimaud/instagram-user-feed
+                          // installation of instafeed: composer require pgrimaud/instagram-user-feed "^5.0" -->
+                <img src="/images/purposes-1.png" alt="" class="grid-item grid-item--w8 grid-item--h2">
+                <img src="/images/purposes-1.png" alt="" class="grid-item grid-item--w1half grid-item--h1half">
+                <img src="/images/purposes-1.png" alt="" class="grid-item grid-item--w1half grid-item--h1half">
+                <img src="/images/purposes-1.png" alt="" class="grid-item grid-item--w1half">
+                <img src="/images/purposes-1.png" alt="" class="grid-item grid-item--w1half">
+                <img src="/images/purposes-1.png" alt="" class="grid-item grid-item--w1half grid-item--h1half">
+                <img src="/images/purposes-1.png" alt="" class="grid-item grid-item--width1half grid-item--height1half">
+                <img src="/images/purposes-1.png" alt="" class="grid-item grid-item--width3 grid-item--height1half">
+                <img src="/images/purposes-1.png" alt="" class="grid-item grid-item--width3 grid-item--height4">
+                <img src="/images/purposes-1.png" alt="" class="grid-item grid-item--width3 grid-item--height2">
+                <img src="/images/purposes-1.png" alt="" class="grid-item grid-item--width2 grid-item--height2">
+                <img src="/images/purposes-1.png" alt="" class="grid-item grid-item--height1half">
+                <img src="/images/purposes-1.png" alt="" class="grid-item grid-item--height1half">
+                <img src="/images/purposes-1.png" alt="" class="grid-item grid-item--width2 grid-item--height2">
+                <img src="/images/purposes-1.png" alt="" class="grid-item grid-item--height1half">
+                <img src="/images/purposes-1.png" alt="" class="grid-item grid-item--height1half">
+                <img src="/images/purposes-1.png" alt="" class="grid-item grid-item--width3 grid-item--height2">
+                <img src="/images/purposes-1.png" alt="" class="grid-item grid-sizer">
+                <div class="layout"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row section why-us">
+        <div class="container">
+          <div class="why-us--header">
+            <span class="section-header--sup">04</span>
+            <h2 class="section-header why-us--title">почему мы</h2>
+          </div>
+          <div class="features-wrapper">
+            <div class="feature">
+              <span class="feature-count">01</span>
+              <h3 class="feature-title">Ответственность</h3>
+              <p class="feature-description">Мы не занимаемся проектированием домов</p>
+            </div>
+            <div class="feature">
+              <span class="feature-count">02</span>
+              <h3 class="feature-title">Большой опыт</h3>
+              <p class="feature-description">Мы не занимаемся проектированием домов</p>
+            </div>
+            <div class="feature">
+              <span class="feature-count">03</span>
+              <h3 class="feature-title">Внимание к мелочам</h3>
+              <p class="feature-description">Мы не занимаемся проектированием домов</p>
+            </div>
+            <div class="feature">
+              <span class="feature-count">04</span>
+              <h3 class="feature-title">Индивидуальный подход</h3>
+              <p class="feature-description">Мы не занимаемся проектированием домов</p>
+            </div>
+            <div class="feature">
+              <span class="feature-count">05</span>
+              <h3 class="feature-title">Все работы под ключ</h3>
+              <p class="feature-description">Мы не занимаемся проектированием домов</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row section portfolio">
+        <div class="tab-container container">
+          <div class="col-xs-12 col-md-3">
+            <ul class="nav nav-tabs nav-tabs-left nav-centered" role="tablist">
+              <div class="portfolio-header">
+                <span class="section-header--sup">05</span>
+                <h2 class="section-header portfolio-title">НАШИ РАБОТЫ</h2>
+              </div>
+              <li role="presentation" class="active">
+                <span class="tabs-count">01</span>
+                <a href="#appInterior" data-toggle="tab" role="tab">
+                  Интерьер квартир
+                </a>
+              </li>
+              <li role="presentation">
+                <span class="tabs-count">02</span>
+                <a href="#pubInterior" data-toggle="tab" role="tab">
+                  Интерьер общественных помещений
+                </a>
+              </li>
+              <li role="presentation">
+                <span class="tabs-count">03</span>
+                <a href="#cottage" data-toggle="tab" role="tab">
+                  Загородные дома и коттеджи
+                </a>
+              </li>
+              <li role="presentation">
+                <span class="tabs-count">04</span>
+                <a href="#exterior" data-toggle="tab" role="tab">
+                  Экстерьеры домов
+                </a>
+              </li>
+              <a href="%23" class="btn-arrow btn-lg">ПОРТФОЛИО</a>
+            </ul>
+          </div>
+          <div class="container">
+            <div id="portfoiloTabs" class="tab-content side-tabs side-tabs-left">
+  		        <div class="tab-pane fade in active" id="appInterior" role="tabpanel">
+                <div class="row">
+                  <div class="col-xs-12 col-md-4">
+                    <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                    <div class="thumbnail-panel">
+                      <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                      <a href="" class="social-link instagram"></a>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-4">
+                    <img src="/images/portfolio-6.png" class="thumbnail " alt="">
+                    <div class="thumbnail-panel">
+                      <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                      <a href="" class="social-link instagram"></a>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-4">
+                    <img src="/images/portfolio-2.png" class="thumbnail " alt="">
+                    <div class="thumbnail-panel">
+                      <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                      <a href="" class="social-link instagram"></a>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-4">
+                    <img src="/images/portfolio-3.png" class="thumbnail " alt="">
+                    <div class="thumbnail-panel">
+                      <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                      <a href="" class="social-link instagram"></a>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-4">
+                    <img src="/images/portfolio-4.png" class="thumbnail " alt="">
+                    <div class="thumbnail-panel">
+                      <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                      <a href="" class="social-link instagram"></a>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-4">
+                    <img src="/images/portfolio-5.png" class="thumbnail " alt="">
+                    <div class="thumbnail-panel">
+                      <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                      <a href="" class="social-link instagram"></a>
+                    </div>
+                  </div>
+                </div>
+  		        </div>
+  		        <div class="tab-pane fade" id="pubInterior" role="tabpanel">
+                <div class="row">
+                  <div class="col-xs-12 col-md-4">
+                    <img src="/images/portfolio-2.png" class="thumbnail " alt="">
+                    <div class="thumbnail-panel">
+                      <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                      <a href="" class="social-link instagram"></a>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-4">
+                    <img src="/images/portfolio-3.png" class="thumbnail " alt="">
+                    <div class="thumbnail-panel">
+                      <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                      <a href="" class="social-link instagram"></a>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-4">
+                    <img src="/images/portfolio-4.png" class="thumbnail " alt="">
+                    <div class="thumbnail-panel">
+                      <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                      <a href="" class="social-link instagram"></a>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-4">
+                    <img src="/images/portfolio-6.png" class="thumbnail " alt="">
+                    <div class="thumbnail-panel">
+                      <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                      <a href="" class="social-link instagram"></a>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-4">
+                    <img src="/images/portfolio-5.png" class="thumbnail " alt="">
+                    <div class="thumbnail-panel">
+                      <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                      <a href="" class="social-link instagram"></a>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-4">
+                    <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                    <div class="thumbnail-panel">
+                      <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                      <a href="" class="social-link instagram"></a>
+                    </div>
+                  </div>
+                </div>
+  		        </div>
+  		        <div class="tab-pane fade" id="cottage" role="tabpanel">
+                <div class="row">
+                  <div class="col-xs-12 col-md-4">
+                    <img src="/images/portfolio-3.png" class="thumbnail " alt="">
+                    <div class="thumbnail-panel">
+                      <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                      <a href="" class="social-link instagram"></a>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-4">
+                    <img src="/images/portfolio-6.png" class="thumbnail " alt="">
+                    <div class="thumbnail-panel">
+                      <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                      <a href="" class="social-link instagram"></a>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-4">
+                    <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                    <div class="thumbnail-panel">
+                      <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                      <a href="" class="social-link instagram"></a>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-4">
+                    <img src="/images/portfolio-2.png" class="thumbnail " alt="">
+                    <div class="thumbnail-panel">
+                      <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                      <a href="" class="social-link instagram"></a>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-4">
+                    <img src="/images/portfolio-3.png" class="thumbnail " alt="">
+                    <div class="thumbnail-panel">
+                      <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                      <a href="" class="social-link instagram"></a>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-4">
+                    <img src="/images/portfolio-4.png" class="thumbnail " alt="">
+                    <div class="thumbnail-panel">
+                      <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                      <a href="" class="social-link instagram"></a>
+                    </div>
+                  </div>
+                </div>
+  		        </div>
+  		        <div class="tab-pane fade" id="exterior" role="tabpanel">
+                <div class="row">
+                  <div class="col-xs-12 col-md-4">
+                    <img src="/images/portfolio-4.png" class="thumbnail " alt="">
+                    <div class="thumbnail-panel">
+                      <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                      <a href="" class="social-link instagram"></a>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-4">
+                    <img src="/images/portfolio-5.png" class="thumbnail " alt="">
+                    <div class="thumbnail-panel">
+                      <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                      <a href="" class="social-link instagram"></a>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-4">
+                    <img src="/images/portfolio-3.png" class="thumbnail " alt="">
+                    <div class="thumbnail-panel">
+                      <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                      <a href="" class="social-link instagram"></a>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-4">
+                    <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                    <div class="thumbnail-panel">
+                      <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                      <a href="" class="social-link instagram"></a>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-4">
+                    <img src="/images/portfolio-2.png" class="thumbnail " alt="">
+                    <div class="thumbnail-panel">
+                      <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                      <a href="" class="social-link instagram"></a>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-4">
+                    <img src="/images/portfolio-6.png" class="thumbnail " alt="">
+                    <div class="thumbnail-panel">
+                      <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                      <a href="" class="social-link instagram"></a>
+                    </div>
+                  </div>
+                </div>
+  		        </div>
+  		      </div>
+          </div>
+		    </div>
+      </div>
+      <div class="row section contact-form">
+        <form action="" id="contactForm">
+          <h2 class="section-header">Бесплатная консультация архитектора</h2>
+          <div class="field-group">
+            <div class="inputgroup">
+              <input id="contactFormName" class="text form-input" type="name" />
+              <label for="name" data-content="Ваше имя">Ваше имя</label>
+            </div>
+            <div class="inputgroup">
+              <input id="contactFormPhone" class="form-input" name="phone" size="9" type="tel" min="11" inputmode="numeric" pattern="+[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+              <label for="phone" data-content="Ваше имя">Номер телефона</label>
+            </div>
+          </div>
+          <div class="contact-form__submit">
+            <input role="button" type="submit" name="submit" onclick="#" class="btn-lg btn-arrow">
+          </div>
+          <div class="inputgroup">
+            <input id="contactFormPolicy" class="form-input" name="" size="9" type="checkbox" checked>
+            <label for="phone" data-content="Ваше имя">Я даю своё согласие на обработку персональных данных</label>
+          </div>
+          <div class="contact-form__message"></div>
+        </form>
+      </div>
     </div>
     <footer class="site-footer">
       <div class="section contacts">
@@ -587,9 +922,14 @@
       </div>
     </footer>
     <!--scripts-->
+
+
     <div class="scripts invisible">
       <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+      <script src="https://npmcdn.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
       <!-- Fallbacks
       <script>window.jQuery || document.write("<script src='js/jquery.min.js'\></script\>");</script>
       <script>$.fn.modal || document.write('<script src="js/bootstrap.min.js"\></script\>');</script>
@@ -604,40 +944,49 @@
           })(jQuery);
       </script>
        -->
+       <script type="text/javascript">
+       var msnry = new Masonry( '.grid', {
+          // columnWidth: 200,
+          itemSelector: '.grid-item',
+          columnWidth: '.grid-sizer',
+          percentPosition: true,
+          // gutter: 10,
+          resize:true,
+          fitWidth: true
+        });
+        msnry.layout();
+          var gridElem = document.querySelector('#instafeed');
+          var msnry;
+          // // http://idizainer.ru/?code=6ad2739a16dc44d999b8421be07de927
+          var feed = new Instafeed({
+            get: 'tagged',
+            tagName: 'random',
+          //   // clientId: '83fc89f73de8421581100b71ab242c20',
+          //   // get: 'tagged',
+          //   // get: 'user',
+          //   // clientId: '83fc89f73de8421581100b71ab242c20',
+          //   // userId: 'kovalchuk.design',
+          //   // userId: '1589056029',
+          //   // tagName: 'TAG',
+          //   // accessToken: '6d22d18060b24927b9cbd8a5aadef7e7',
+            accessToken: '4827953637.83fc89f.819eb851bd1d4e10ab84f5ae953a10a6',
+            // resolution: 'standard_resolution',
+            sortBy:'most-recent',
+            after: function() {
+              msnry = new Masonry('#instafeed');
+              imagesLoaded( gridElem ).on( 'progress', function() {
+               msnry.layout();
+              });
+            }
+          });
+          feed.run();
+       </script>
        <script>
          // Instantiate the Bootstrap carousel
          $('.multi-item-carousel').carousel({
              interval: false
            });
 
-         // for every slide in carousel, copy the next slide's item in the slide.
-         // Do the same for the next, next item.
-         // $('.multi-item-carousel .item').each(function(){
-         //   var next = $(this).next();
-         //   var last = $(this).children().last();
-         //   var iw = $('.img-wrapper');
-         //   var header1 = $('.slide-header').eq(1).text();
-         //   var header2 = $('.slide-header').eq(2).text();
-         //  var span1 = $('<span />').attr({'className':'sibling_left'});
-         //  var span2 = $('<span />').attr({'className':'sibling_rigth'});
-         //
-         //
-         //   if (!next.length) {
-         //     next = $(this).siblings(':first');
-         //   }
-         //   next.children(':first-child').clone().appendTo($(this));
-         //   span1.html(header1).appendTo(last);
-         //
-         //   if (next.next().length>0) {
-         //     next.next().children(':first-child').clone().appendTo($(this));
-         //     span2.html(header2).appendTo(last);
-         //   } else {
-         //     $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-         //     span2.html(header2).appendTo(last);
-         //   }
-         //   console.log(header1);
-         //   console.log(header2);
-         // });
          $('.multi-item-carousel .item').each(function(){
            var next = $(this).next();
            if (!next.length) {
@@ -651,6 +1000,19 @@
              $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
            }
          });
+       </script>
+       <script>
+       // function changeInner (item) {
+       //   _removeClasses();
+       //   document.getElementById(item).className += " visible";
+       // }
+       //
+       // function _removeClasses() {
+       //   var els = document.querySelectorAll('.masonry-item.visible');
+       //   for (var i = 0; i < els.length; i++) {
+       //     els[i].classList.remove('visible')
+       //   }
+       // }
        </script>
     </div>
   </body>

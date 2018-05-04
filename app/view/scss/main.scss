@@ -507,6 +507,17 @@
   }
 }
 /***END header**/
+.section-header--sup{
+  display: block;
+  transform: rotate(90deg);
+  position: absolute;
+  left:-5px;
+  top:60px;
+  &:before{
+    content:'—';
+    margin-right: 1rem;
+  }
+}
 /***topSlider***/
 .top-slider{
   & .multi-item-carousel{
@@ -822,7 +833,7 @@
     }
   }
 /***section purposes***/
-.purposes{
+.section.purposes{
   & .purposes-header{
     display: block;
   }
@@ -901,7 +912,7 @@
   }
 }
 @media screen and (max-width:767px) {
-  .purposes{
+  .section.purposes{
     & .purposes-header{
       display: block;
     }
@@ -1005,7 +1016,244 @@
   }
 }
 /***END section purposes***/
+/***section instafeed***/
+.section.instafeed{
+  position: relative;
+  .instafeed-header{
+    position: relative;
+    height: 200px;
+    padding: 20px;
+    .instafeed-title{
+      float: left;
+      margin-left: 50px;
+    }
+    .btn-arrow{
+      float: right;
+      margin-top: 30px;
+    }
+  }
+  .masonry-wrapper{
+    position: relative;
+    .masonry{
+      position: relative;
+      #instafeed{
+        position: relative;
+      }
+    }
+  }
+}
+/***END section instafeed***/
+/***section why-us***/
+.section.why-us{
+  & .container{
+    & .why-us--header{
+      & .section-header--sup{}
+      & .section-header{
+        margin-left: 50px;
+      }
+    }
+    & .features-wrapper{
+      height: 800px;
+      & .feature{
+        display: block;
+        padding: 40px;
+        width: 320px;
+        & .feature-count{
+          display: block;
+          margin: 0 auto;
+        }
+        & .feature-title{}
+        & .feature-description{}
+      }
+      & .feature:first-child{
+        position: relative;
+        float: left;
+      }
+      & .feature:nth-child(2){
+        position: absolute;
+        top:375px;
+        left:200px;
+      }
+      & .feature:nth-child(3){
+        position: absolute;
+        top:615px;
+        left:50%;
+        margin-left: -160px;
+      }
+      & .feature:nth-child(4){
+        position: absolute;
+        top:375px;
+        right:200px;
+      }
+      & .feature:last-child{
+        position: relative;
+        float: right;
+        top:0;
+      }
+    }
+  }
+}
+/***END section why-us***/
+/***section portfolio***/
+.section.portfolio{
+  overflow: hidden;
+  & .tab-container{
+    padding: 0;
+    &>div{
+      & .nav.nav-tabs.nav-tabs-left.nav-centered{
+        float: left;
+        border-right: 0;
+        border-bottom: 0;
+        width: 100%;
+        & .portfolio-header{
+          margin-bottom: 50px;
+          & .section-header--sup{}
+          & .section-header{
+            margin-left: 50px;
+          }
+        }
+        & li{
+          display: block;
+          float: none;
+          height: 100px;
+          margin: 0;
+          padding: 50px 0 0 0;
+        	text-align: left;
+          & .tabs-count{
+            position: absolute;
+            left:-3rem;
+            transform: translate(-30px,-50px);
+            display: none;
+          }
+          & a{
+            padding: 0;
+            display: block;
+            margin-right: 0;
+            border-radius: 0;
+            border: 0;
+            width: 100%;
+            text-align: left;
 
+          }
+          &:after{
+          }
+        }
+        & li:first-child{
+          margin-top: 30px;
+        }
+        & li.active{
+            & span{
+              display: block;
+            }
+            & a{}
+            &:after{
+              content: '—';
+              position: absolute;
+              right: 0;
+              top:60px;
+            }
+        }
+        & .btn-arrow{
+          display: block;
+          margin:50px 5px 50px 0;
+        }
+      }
+    }
+    & .container{
+      position: absolute;
+      top:0;
+      left:292px;
+      & #portfoiloTabs{
+        padding:50px;
+        & .tab-pane{
+          position: relative;
+          margin:0 -15px;
+          & .col-md-4{
+            overflow: hidden;
+            padding: 0;
+            height: 300px;
+            // margin:0 15px;
+            &:hover{
+              overflow: visible;
+              transform: scale(1.2) translate(0, -45px);
+              height: 300px;
+              z-index: 5;
+              & .thumbnail{
+                filter: none;
+                // position: absolute;
+                top:0;
+                margin:0 15px;
+                // left: 0;
+                // right:0;
+                z-index: 5;
+              }
+              & .thumbnail-panel{
+                // transform: scale(1.2);
+                z-index: 5;
+                opacity: 1;
+                box-sizing: border-box;
+                height: auto;
+                // left: 15px;
+                // right: -15px;
+                padding: 15px;
+                transition: all 0.3s ease-in-out;
+              }
+            }
+            & .thumbnail{
+              // max-width:320px;
+              width: 100%;
+              height: 250px;
+              padding: 0;
+              margin:15px;
+              border:0;
+              border-radius: 0;
+              filter: grayscale(1);
+            }
+            & .thumbnail-panel{
+              position: absolute;
+              top:0px;
+              left: 15px;
+              right:15px;
+              width:100%;
+              opacity: 0;
+              height:0;
+              & h3{
+                width: 80%;
+                float: left;
+              }
+              & .social-link{
+                float: right;
+                padding: 0.25rem;
+                display: block;
+                width: 1.5rem;
+                height: 1.5rem;
+                margin-right: 0.5rem;
+                z-index: 5;
+
+              }
+            }
+          }
+        }
+        & #appInterior{}
+        & #pubInterior{}
+        & #cottage{}
+        & #exterior{}
+      }
+    }
+  }
+}
+
+/***END section portfolio***/
+/***section contact-form***/
+.section.contact-form{
+  padding: 75px 0  75px 50%;
+  #contactForm{
+    width:400px;
+    margin-left:-200px;
+    padding:50px;
+  }
+}
+/***END section contact-form***/
 /***footer**/
 .site-footer{}
 #map{

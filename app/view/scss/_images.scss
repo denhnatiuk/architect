@@ -79,7 +79,59 @@
   }
 }
 /***END section purposes***/
-
+/***section why-us***/
+.why-us{
+  & .container{
+    background-image: url(../images/art.png);
+    background-position: top 175px center;
+    background-repeat: no-repeat;
+    & .why-us--header{
+      & .section-header--sup{}
+      & .section-header{}
+    }
+    & .features-wrapper{
+      & .feature{
+        & .feature-count{}
+        & .feature-title{}
+        & .feature-description{}
+      }
+    }
+  }
+}
+/***END section why-us***/
+/***section portfolio***/
+.section.portfolio{
+  & .tab-container{
+    & .nav.nav-tabs.nav-tabs-left.nav-centered{
+      & li{
+        & span{}
+        & a{}
+        &:after{}
+      }
+      & li.active{
+          & span{}
+          & a{}
+          &:after{}
+      }
+    }
+    & #portfoiloTabs{
+      & .tab-pane{}
+      & #appInterior{}
+      & #pubInterior{}
+      & #cottage{}
+      & #exterior{}
+    }
+  }
+}
+/***END section portfolio***/
+/***section contact-form***/
+.section.contact-form{
+  background: url(../images/contactForm.png);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+/***END section contact-form***/
 /***footer**/
 
 .social-link.instagram{}

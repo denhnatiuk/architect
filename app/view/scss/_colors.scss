@@ -60,6 +60,12 @@ a{
 }
 
 /***END header**/
+.section-header--sup{
+  color:#000;
+  &:before{
+    color: $hover;
+  }
+}
 .top-slider{
   & .multi-item-carousel{
             color:#fff;
@@ -206,7 +212,132 @@ a{
   }
 }
 /***END section purposes***/
+/***section instafeed***/
+.instafeed{
+  background: $dark;
+  color: #fff;
+  & .container{
+    & .instafeed-header{
+      .section-header--sup{
+        color:#fff;
+      }
+      .instafeed-title{
+      }
+      & .btn-arrow{
+        color:#fff;
+        &:hover{
+          color: $hover;
+        }
+        &:after{
+          background-color: $dark;
+        }
+      }
+    }
+    .masonry-wrapper{
+      .masonry{
+        #instafeed{
+        }
+      }
+    }
+  }
+}
+/***END section instafeed***/
+/***section why-us***/
+.why-us{
+  & .container{
+    & .why-us--header{
+      & .section-header--sup{}
+      & .section-header{}
+    }
+    & .features-wrapper{
+      & .feature{
+        background: #fff;
+        border: 1px solid $inactive;
+        & .feature-count{
+          color: $hover;
+        }
+        & .feature-title{}
+        & .feature-description{}
+      }
+    }
+  }
+}
+/***END section why-us***/
+/***section portfolio***/
+.section.portfolio{
+  background-color: $dark;
+  & .tab-container{
+    & .nav.nav-tabs.nav-tabs-left.nav-centered{
+      color:#fff;
+      & li{
+        & span{}
+        & a{
+          color: $inactive;
+          &:hover{
+            background: inherit;
+          }
+        }
+        &:after{}
+      }
+      & li.active{
+          & span{}
+          & a{
+            background-color: inherit;
+            color:#fff;
+          }
+          &:after{
+            color: $hover;
+          }
+      }
+      & .btn-arrow{
+        color:#fff;
+        &:hover{
+          color: $hover;
+        }
+        &:after{
+          background-color: $dark;
+        }
+      }
+    }
+    & .container{
+      background-color: #fff;
+      & #portfoiloTabs{
+        background-color: #fff;
+        color: $dark;
+        & .tab-pane{
+          & .col-md-4{
+            &:hover{
+              & .thumbnail-panel{
+                  background-color: $dark;
+                  color: #fff;
+                  & .social-link{
+                    color:$hover;
+                    border: 1px solid $hover;
+                  }
+                }
+              }
+            & .thumbnail-panel{
 
+            }
+          }
+        }
+        & #appInterior{}
+        & #pubInterior{}
+        & #cottage{}
+        & #exterior{}
+      }
+    }
+  }
+}
+/***END section portfolio***/
+/***section contact-form***/
+#contactForm{
+  background: rgba(0,0,0,0.5);
+  & .section-header{
+    color:#fff;
+  }
+}
+/***END section contact-form***/
 /***footer**/
 .site-footer{}
 .section.contacts{

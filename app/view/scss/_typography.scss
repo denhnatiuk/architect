@@ -16,6 +16,14 @@ a{
     text-decoration: none;
   }
 }
+.section-header--sup{
+  font-family: 'ProximaNova-Semibold';
+  font-size: 1.667rem;
+  &:before{
+    content:'—';
+
+  }
+}
 .btn-arrow{
   &:after{
     font-size: 1.25rem;
@@ -219,7 +227,148 @@ a{
   }
 }
 /***END section purposes***/
+/***section instafeed***/
+.instafeed{
+  .instafeed-header{
+    .instafeed-title{
+      font-family: 'PT_Serif-Caption-Web-Regular';
+      font-size: 2.222rem;
+      line-height: 3.222rem;
+      text-transform: uppercase;
+    }
+    .btn-arrow{
+    }
+  }
+  .masonry-wrapper{
+    .masonry{
+      #instafeed{
+      }
+    }
+  }
+}
+/***END section instafeed***/
+/***section why-us***/
+.why-us{
+  & .container{
+    & .why-us--header{
+      & .section-header--sup{}
+      & .section-header{
+        font-family: "PT-Serif-Caption-Web-Regular";
+        font-size: 2.222rem;
+        line-height: 3.222rem;
+        text-transform: uppercase;
+      }
+    }
+    & .features-wrapper{
+      & .feature{
+        & .feature-count{
+          font-family: 'ProximaNova-Bold';
+          font-size: 2.667rem;
+          text-align: center;
+        }
+        & .feature-title{
+          font-family: 'Exo2-MediumCondensed';
+          font-size: 1.222rem;
+          text-align: center;
+        }
+        & .feature-description{
+          font-family: 'ProximaNova-Light';
+          font-size: 1rem;
+          line-height: 1.667rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+/***END section why-us***/
+/***section portfolio***/
+.section.portfolio{
+  & .tab-container{
+    & .nav.nav-tabs.nav-tabs-left.nav-centered{
+      & .portfolio-header{
+        & .section-header--sup{
+          color: #fff;
+        }
+        & .section-header{
+          font-family: "PT-Serif-Caption-Web-Regular";
+          font-size: 2.222rem;
+          line-height: 3.222rem;
+          text-transform: uppercase;
+        }
+      }
+      & li{
+        & span{
+          font-size: 5.556rem;
+          color: rgba(255,255,255,0.2);
+        }
+        & a{
+          font-family: 'Exo2-MediumCondensed';
+          font-size: 1.222rem;
+          text-align: center;
+        }
+        &:after{}
+      }
+      & li.active{
+        & span{
 
+        }
+        & a{
+
+        }
+        &:after{
+        }
+      }
+      & .btn-arrow{
+        font-family: 'ProximaNova-Semibold';
+        font-size: 0.7778rem;
+        text-align: center;
+      }
+    }
+    & #portfoiloTabs{
+      & .tab-pane{
+        & .thumbnail{
+          &:hover{
+
+          }
+        }
+        & .thumbnail-panel{
+          & h3{
+            font-family: "Exo2-RegularCondensed";
+            font-size:  0.8333rem;
+            line-height: 1rem;
+          }
+          & .social-link{
+            padding: 0.25rem;
+            display: block;
+            width: 1.5rem;
+            height: 1.5rem;
+            margin-right: 0.5rem;
+            margin-top: 15px;
+            line-height: 1rem;
+            font-size: 1rem;
+            text-align: center;
+            &.instagram:before{
+              content: '\f16d';
+              font-family: FontAwesome;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+      & #appInterior{}
+      & #pubInterior{}
+      & #cottage{}
+      & #exterior{}
+    }
+  }
+}
+/***END section portfolio***/
+/***section contact-form***/
+
+/***END section contact-form***/
 /***footer**/
 .section.contacts{
   & .contacts-wrapper{
