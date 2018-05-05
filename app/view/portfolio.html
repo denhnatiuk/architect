@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no">
+
+    <title>Сайт Анастасии Ковальчук</title>
+    <!--stylesheets-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- scripts -->
+    <style media="screen">
+      .grid-sizer{
+        width:6.25%;
+        heigth:70px;
+        /* width:70px;
+        height:70px; */
+        /* margin:15px; */
+      }
+      .grid-item {
+        width:6.24%;
+        heigth:70px;
+        /* width:12.5%;
+        height: 180px;
+        margin:15px; */
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar navbar-fixed-top" expand-aria='true'>
+        <div class="container navbar-wrapper">
+          <div class="navbar-brand">
+            <span class="hidden">Anastasia Kovalchuk</span>
+            <a href="/"><img src="/images/logo.png" alt="brand-logo" class="brand-logo"></a>
+          </div>
+          <div id="primaryMenuTrigger">
+            <span class="menu-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 20" class="icon icon-bars">
+                <rect class="icon-bars__1" x="1" y="1" width="19" height="3"/>
+                <rect class="icon-bars__2" x="1" y="8" width="19" height="3"/>
+                <rect class="icon-bars__3" x="1" y="15" width="19" height="3"/>
+              </svg>
+            </span>
+            <span class="menu-title">MЕНЮ</span>
+            <script>
+              var menuIcon = document.querySelector('.menu-icon');
+              menuIcon.addEventListener('click', function(){
+                var menuTrigger = document.getElementById('primaryMenuTrigger');
+                menuTrigger.classList.toggle('open');
+              })
+            </script>
+          </div>
+          <ul id="primaryMenu" class="nav-menu navbar-left">
+            <li class="nav-item"><a href="./about.html">О НАС</a></li>
+            <li class="nav-item"><a href="#">УСЛУГИ И ЦЕНЫ</a></li>
+            <li class="nav-item"><a href="/blog.html">БЛОГ</a></li>
+            <li class="nav-item"><a href="/portfolio.html">ПОРТФОЛИО</a></li>
+            <li class="nav-item"><a href="/contacts.html">КОНТАКТЫ</a></li>
+          </ul>
+          <div id="primaryRight">
+            <span class="tel">7(499)499-11-29</span>
+            <span class="email">info@yandex.ru</span>
+            <button class="headerModal-trigger" data-toggle="modal" data-target="#headerModal">Заказать звонок</button>
+          </div>
+        </div>
+      </nav>
+      <div class="modal fade" id="headerModal" role="dialog">
+        <div class="modal-dialog modal-md">
+        <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="form-header">СВЯЗАТЬСЯ С НАМИ</h4>
+              <span class="form-header__sub">Оставьте свой номер телефона и мы Вам обязательно перезвоним</span>
+              <button type="button" class="modal-escape" data-dismiss="modal">x</button>
+            </div>
+            <div class="modal-body header-form-container">
+              <!-- <div class="screen-reader-response"></div> -->
+              <form action="" method="post" class="wpcf7-form" novalidate="novalidate">
+                  <div class="inputgroup">
+                    <input type="tel" name="number" value="" size="40" minlength="10" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel form-input" id="headerFormPhone" aria-required="true" aria-invalid="false" placeholder="012-345-67-89"><label> Номер телефона  </label>
+                  </div>
+                  <div class="inputgroup">
+                    <input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required text form-input" id="headerFormName" aria-required="true" aria-invalid="false" placeholder="Ваше имя"><label>Ваше имя</label>
+                  </div>
+                  <p><input type="submit" value="Заказать консультацию" class="wpcf7-form-control wpcf7-submit btn btn-main btn-lg"></p>
+                  <span class="ajax-loader"></span>
+                  <div class="wpcf7-response-output wpcf7-display-none"></div>
+              </form>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="headerModalResponse" role="dialog">
+        <div class="modal-dialog modal-md">
+        <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="form-header">СПАСИБО!</h4>
+              <span class="form-header__sub">Ваше сообщение было отправлено успешно.</span>
+              <span class="form-header__sub">Мы свяжемся с Вами в ближайшее время!</span>
+              <button type="button" class="modal-escape" data-dismiss="modal">x</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container-fluid  main-content">
+      <div class="row section category-portfolio">
+        <div class="container">
+          <div class="breadcrumbs">
+            <span>Главная</span>/<span>ПОРТФОЛИО</span>
+          </div>
+          <div class="page-header">
+            <span class="section-header--sup">01</span>
+            <h1 class="page-title section-header">ПОРТФОЛИО</h1>
+          </div>
+        </div>
+        <div class="container">
+          <div class="button-group filters-button-group">
+              <button class="btn-lg btn-tab is-checked" data-filter=".appartment">
+                <img src="./images/blog-thumbnail1.png" alt="" class="">
+                <span>Квартиры</span>
+              </button>
+              <button class="btn-lg btn-tab" data-filter=".public">
+                <img src="./images/blog-thumbnail4.png" alt="" class="">
+                <span>Общественные помещения</span>
+              </button>
+              <button class="btn-lg btn-tab" data-filter=".cottage">
+                <img src="./images/blog-thumbnail2.png" alt="" class="">
+                <span>Коттеджи</span>
+              </button>
+              <button class="btn-lg btn-tab" data-filter=".exterior">
+                <img src="./images/blog-thumbnail3.png" alt="" class="">
+                <span>Экстерьеры домов</span>
+              </button>
+          </div>
+        </div>
+        <div id="grid-container" class="container-fluid transitions-enabled fluid masonry js-masonry grid">
+              <article class="public">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="cottage">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="appartment">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="exterior">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="public">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="cottage">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="appartment">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="exterior">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="public">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="cottage">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="appartment">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="exterior">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="public">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="cottage">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="appartment">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="exterior">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="public">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="cottage">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="appartment">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="exterior">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="public">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="cottage">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="appartment">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="exterior">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="public">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="cottage">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="appartment">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="exterior">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="public">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="cottage">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="appartment">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="exterior">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-3.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="public">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-5.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="cottage">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-4.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="appartment">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-6.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="exterior">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-1.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="public">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-2.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="cottage">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-3.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="appartment">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-3.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+              <article class="exterior">
+                <div class="portfolio-item ">
+                  <img src="/images/portfolio-2.png" class="thumbnail " alt="">
+                  <div class="thumbnail-panel">
+                    <h3 class="thumbnail-title">Проект квартиры Екатерины Р.</h3>
+                    <a href="" class="social-link instagram"></a>
+                  </div>
+                </div>
+              </article>
+          </div>
+          <div class="portfolio-add-more"><button class="btn-lg btn-dblarrow">Загрузить еще</button></div>
+        </div>
+      </div>
+      <div class="row section contact-form">
+        <form action="" id="contactForm">
+          <h2 class="section-header">Бесплатная консультация архитектора</h2>
+          <div class="field-group">
+            <div class="inputgroup">
+              <label for="name">Ваше имя</label>
+              <input id="contactFormName" class="text form-input" type="name" />
+            </div>
+            <div class="inputgroup">
+              <label for="phone">Номер телефона</label>
+              <input id="contactFormPhone" class="form-input" name="phone" size="9" type="tel" min="11" inputmode="numeric">
+            </div>
+          </div>
+          <div class="contact-form__submit">
+            <button role="button" type="submit" name="Получить консультацию" onclick="#" class="btn-lg btn-arrow">Получить консультацию</button>
+          </div>
+          <div class="inputgroup">
+            <input id="contactFormPolicy" class="form-input" name="policy" type="checkbox" checked>
+            <label for="policy">Я даю своё согласие <br> на обработку персональных данных</label>
+          </div>
+          <div class="contact-form__message"></div>
+        </form>
+      </div>
+    </div>
+<footer class="site-footer">
+  <div class="section contacts">
+    <div id="map">
+      <script>
+          function initMap() {
+            var uluru = {lat: 55.74811, lng: 37.7644236};
+            var mapCenter = {lat: 55.74811, lng: 37.7664236};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 18,
+              center: mapCenter
+          });
+          // var gradazMarker = {
+          //     path: 'M256,0C153.755,0,70.573,83.182,70.573,185.426c0,126.888,165.939,313.167,173.004,321.035    c6.636,7.391,18.222,7.378,24.846,0c7.065-7.868,173.004-194.147,173.004-321.035C441.425,83.182,358.244,0,256,0z M256,278.719    c-51.442,0-93.292-41.851-93.292-93.293S204.559,92.134,256,92.134s93.291,41.851,93.291,93.293S307.441,278.719,256,278.719z',
+          //     fillColor: '#fabe1a',
+          //     fillOpacity: 0.8,
+          //     scale: 0.1,
+          //     strokeColor: 'gold',
+          //     strokeWeight: 1
+          // };
+          var marker = new google.maps.Marker({
+              position: uluru,
+              // icon: gradazMarker,
+              map: map
+          });
+          var customStyled = [
+          {
+            "featureType": "poi",
+            "elementType": "labels.text",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "featureType": "poi.business",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "featureType": "road",
+            "elementType": "labels.icon",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "featureType": "transit",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          }
+        ];
+        map.set('styles',customStyled);
+          }
+      </script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNAatENUDbw8EQgvqRGtz2H30HID3-m_4&callback=initMap"></script>
+    </div>
+    <div class="container">
+      <div class="contacts-wrapper">
+        <h2 class="contacts-header">КОНТАКТЫ</h2>
+        <ul class="contacts-list">
+          <li class="contacts-item">
+            <address class="address">
+              г.Москва, ул. Зеленый бульвар, 1
+            </address>
+          </li>
+          <li class="contacts-item">
+            <span class="tel">
+              7(499)499-11-29
+            </span>
+          </li>
+          <li class="contacts-item">
+            <span class="email">info@yandex.ru</span>
+          </li>
+        </ul>
+        <button class="btn-lg btn-arrow">ЗАКАЗАТЬ ЗВОНОК</button>
+        <div class="social">
+          <a href="%23" class="social-link instagram"></a>
+          <a href="%23" class="social-link facebook"></a>
+          <a href="%23" class="social-link houzz"></a>
+          <a href="%23" class="social-link pinterest"></a>
+          <a href="%23" class="social-link archiprofi">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 300.000000 300.000000" preserveAspectRatio="xMidYMid meet">
+              <g transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)">
+              <path d="M845 1508 c-258 -706 -471 -1289 -473 -1295 -3 -10 44 -13 216 -13 l220 0 901 382 901 383 0 231 0 232 -191 -80 c-105 -43 -194 -77 -197 -74 -3 3 -130 345 -282 758 l-276 753 -175 3 -175 2 -469 -1282z m920 -107 c66 -195 115 -356 110 -358 -6 -2 -208 -88 -450 -192 -242 -103 -441 -184 -443 -180 -3 7 463 1357 510 1479 11 27 23 -6 273 -749z"/>
+              <path d="M2243 631 c-101 -43 -185 -80 -189 -84 -3 -3 20 -83 51 -176 l57 -171 224 0 c123 0 224 2 224 5 0 5 -180 499 -183 502 -1 0 -84 -34 -184 -76z"/>
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <div class="navbar-brand">
+        <img src="/images/logo.png" alt="brand-logo" class="brand-logo">
+      </div>
+      <ul id="footerMenu" class="nav-menu navbar-left">
+        <li class="nav-item"><a href="%23">О НАС</a></li>
+        <li class="nav-item"><a href="%23">УСЛУГИ И ЦЕНЫ</a></li>
+        <li class="nav-item"><a href="%23">БЛОГ</a></li>
+        <li class="nav-item"><a href="%23">ПОРТФОЛИО</a></li>
+        <li class="nav-item"><a href="%23">КОНТАКТЫ</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<!--scripts-->
+
+
+<div class="scripts invisible">
+  <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://cdn2.hubspot.net/hub/322787/hub_generated/style_manager/1440007849180/custom/page/hack-a-thon-3/isotope.min.js" charset="utf-8" defer></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script src="https://npmcdn.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
+  <!-- <script src="https://cdn2.hubspot.net/hub/322787/hub_generated/style_manager/1440007714979/custom/page/hack-a-thon-3/masonry.min.min.js" charset="utf-8" defer></script> -->
+
+  <script src="/js/portfolio.masonry.js"></script>
+  <!-- Fallbacks
+  <script>window.jQuery || document.write("<script src='js/jquery.min.js'\></script\>");</script>
+  <script>$.fn.modal || document.write('<script src="js/bootstrap.min.js"\></script\>');</script>
+  <script>
+      (function($){
+          var $span = $('<span class="fa" style="display:none"></span>').appendTo('body');
+          if ($span.css('fontFamily') !== 'FontAwesome' ) {
+              // Fallback Link
+              $('head').append('<link href="css/font-awesome.min.css" rel="stylesheet">');
+          }
+          $span.remove();
+      })(jQuery);
+  </script>
+   -->
+   <script type="text/javascript">
+   var msnry = new Masonry( '.grid', {
+      // columnWidth: 200,
+      itemSelector: '.grid-item',
+      columnWidth: '.grid-sizer',
+      percentPosition: true,
+      // gutter: 10,
+      resize:true,
+      fitWidth: true
+    });
+    msnry.layout();
+      var gridElem = document.querySelector('#instafeed');
+      var msnry;
+      // // http://idizainer.ru/?code=6ad2739a16dc44d999b8421be07de927
+      var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'random',
+      //   // clientId: '83fc89f73de8421581100b71ab242c20',
+      //   // get: 'tagged',
+      //   // get: 'user',
+      //   // clientId: '83fc89f73de8421581100b71ab242c20',
+      //   // userName: 'kovalchuk.design',
+      //   // userId: '1589056029',
+      //   // tagName: 'TAG',
+      //   // accessToken: '6d22d18060b24927b9cbd8a5aadef7e7',
+        accessToken: '4827953637.83fc89f.819eb851bd1d4e10ab84f5ae953a10a6',
+        // resolution: 'standard_resolution',
+        sortBy:'most-recent',
+        after: function() {
+          msnry = new Masonry('#instafeed');
+          imagesLoaded( gridElem ).on( 'progress', function() {
+           msnry.layout();
+          });
+        }
+      });
+      feed.run();
+   </script>
+   <script>
+     $('.multi-item-carousel').carousel({
+         interval: false
+       });
+
+     $('.multi-item-carousel .item').each(function(){
+       var next = $(this).next();
+       if (!next.length) {
+         next = $(this).siblings(':first');
+       }
+       next.children(':first-child').clone().appendTo($(this));
+
+       if (next.next().length>0) {
+         next.next().children(':first-child').clone().appendTo($(this));
+       } else {
+         $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+       }
+     });
+   </script>
+   <script>
+
+   </script>
+</div>
+</body>
+</html>

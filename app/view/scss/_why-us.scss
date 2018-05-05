@@ -1,0 +1,51 @@
+/***section why-us***/
+.section.why-us{
+  & .container{
+    & .why-us--header{
+      & .section-header--sup{}
+      & .section-header{
+        margin-left: 50px;
+      }
+    }
+    & .features-wrapper{
+      height: 800px;
+      & .feature{
+        display: block;
+        padding: 40px;
+        width: 320px;
+        & .feature-count{
+          display: block;
+          margin: 0 auto;
+        }
+        & .feature-title{}
+        & .feature-description{}
+      }
+      & .feature:first-child{
+        position: relative;
+        float: left;
+      }
+      & .feature:nth-child(2){
+        position: absolute;
+        top:375px;
+        left:200px;
+      }
+      & .feature:nth-child(3){
+        position: absolute;
+        top:615px;
+        left:50%;
+        margin-left: -160px;
+      }
+      & .feature:nth-child(4){
+        position: absolute;
+        top:375px;
+        right:200px;
+      }
+      & .feature:last-child{
+        position: relative;
+        float: right;
+        top:0;
+      }
+    }
+  }
+}
+/***END section why-us***/

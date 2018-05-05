@@ -1,0 +1,27 @@
+/***section instafeed***/
+.section.instafeed{
+  position: relative;
+  .instafeed-header{
+    position: relative;
+    height: 200px;
+    padding: 20px;
+    .instafeed-title{
+      float: left;
+      margin-left: 50px;
+    }
+    .btn-arrow{
+      float: right;
+      margin-top: 30px;
+    }
+  }
+  .masonry-wrapper{
+    position: relative;
+    .masonry{
+      position: relative;
+      #instafeed{
+        position: relative;
+      }
+    }
+  }
+}
+/***END section instafeed***/

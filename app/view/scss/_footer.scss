@@ -1,0 +1,127 @@
+/***footer**/
+.site-footer{}
+#map{
+  position: absolute;
+  z-index: 1;
+  width:100%;
+  height:575px;
+}
+.section.contacts{
+  position: relative;
+  & .contacts-wrapper{
+    // position: absolute;
+    position: relative;
+    float: right;
+    top:0;
+    z-index: 5;
+    width:560px;
+    height:575px;
+    padding: 55px 100px;
+    & h2{
+      margin: 40px 0;
+    }
+    & .contacts-list{
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: 40px;
+      & .contacts-item{
+        margin: 14px 0;
+      }
+      & .address{
+        margin: 0;
+        &:before{
+          margin-right: 1rem;
+        }
+      }
+      & .tel{
+        &:before{
+          margin-right: 1rem;
+        }
+      }
+      & .email{
+        &:before{
+          margin-right: 1rem;
+        }
+      }
+    }
+    & .btn-arrow{}
+    & .social{
+      margin-top: 100px;
+      & .social-link{
+        padding: 0.25rem;
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+.footer{
+  height: 100px;
+  overflow: visible;
+  & .navbar-brand{
+    position: relative;
+    padding: 0;
+    & .brand-logo{
+      margin-top: -20px;
+      height: 120px;
+      z-index: 2;
+      position: relative;
+    }
+  }
+  & #footerMenu{
+    position: relative;
+    z-index: 1;
+    max-width: 80%;
+    height:120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    margin: 0;
+    & .nav-item{
+      padding-right: 20px;
+      margin: auto;
+    }
+    & .nav-item:first-child{
+
+    }
+    & .nav-item:nth-child(2n+3){
+      margin-right: auto;
+    }
+    & .nav-item:nth-child(2n+4), .nav-item:nth-child(2n+5){
+      justify-content: flex-end;
+      // margin: auto;
+    }
+    & .nav-item:last-child{
+      // padding-right: 0;
+      margin-right: 0;
+    }
+  }
+}
+@media screen and (max-width:767px) {
+  .section.contacts{
+    #map{
+      display: none;
+    }
+    .contacts-wrapper{
+      padding: 15px;
+      width:100%;
+      height: auto;
+      .social{
+        position: absolute;
+        right:-5px;
+        bottom:-50px;
+        z-index: 5;
+      }
+    }
+  }
+  #footerMenu{
+    display: none;
+    visibility: hidden;
+  }
+}
+/***END footer**/

@@ -1,0 +1,47 @@
+/***section contact-form***/
+.section.contact-form{
+  box-sizing: border-box;
+  padding: 75px 0  75px 25%;
+  & #contactForm{
+    width:50%;
+    margin-left:10%;
+    padding:50px 100px 100px 100px;
+    .section-header{
+      margin:0 0 30px 0;
+    }
+    .field-group{
+      padding: 0 50px;
+      .inputgroup{
+        input{
+          width: 320px;
+          margin:0 30px 30px 30px;
+        }
+        label{
+          display: block;
+          margin-left: 30px;
+        }
+      }
+      #contactFormName{}
+      #contactFormPhone{}
+    }
+    .contact-form__submit{
+      margin-left: 115px;
+      width:100%;
+    }
+    &>.inputgroup{
+      margin-top: 30px;
+      margin-left: 115px;
+      & #contactFormPolicy{
+        display: inline-block;
+        float: left;
+      }
+      & #contactFormPolicy ~ label{
+        float: left;
+        display: block;
+
+      }
+    }
+    & .contact-form__message{}
+  }
+}
+/***END section contact-form***/

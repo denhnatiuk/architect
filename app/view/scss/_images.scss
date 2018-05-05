@@ -140,3 +140,147 @@
 .social-link.pinterest{}
 .social-link.archiprofi{}
 /***END footer**/
+
+
+
+// page about
+.section.about-us--page-01{
+  background: url(../images/design.png);
+  //url(../images/desing.png);
+  background-position: bottom 80px right 200px;
+  background-repeat: no-repeat;
+  background-size: 6%;
+}
+.section.about-us--page-02{}
+.section.about-us--page-03{
+  background-image: url(../images/art.png);
+  background-position: left 75px top 150px;
+  background-repeat: no-repeat;
+  background-size: 6%;
+  .container{
+    .section-header{
+
+    }
+    .about-us--media{
+      .brand-photo1{}
+      #aboutUsVideoTrigger{}
+      & .btn-logo{
+        background: url(../images/logo-transparent.png), url(../images/play-button.png), linear-gradient(to bottom, #1a171b, #1a171b );
+        background-position: top 50px center, bottom 30px center, center;
+        background-size: 60%, 10%, contain;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+          background-size: 60%, 15%, contain;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+    .about-us--page-03-description{
+      background-image: url(../images/signature.png);
+      background-position: bottom 30px right 32%;
+      background-repeat: no-repeat;
+      background-size: 28%;
+      p{
+      }
+      p:first-child{
+
+      }
+    }
+  }
+}
+// END page about
+// page blog
+.section.category-blog{
+  .container{
+    &:before {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: -134px;
+    right: -136px;
+    top: 0;
+    bottom: 0;
+    }
+    .breadcrumbs{
+      // margin-left: 50px;
+      & span{
+        margin:0 0.5rem;
+      }
+    }
+    .page-header{
+      display: inline-block;
+      width: 100%;
+      margin:0;
+      padding-bottom: 40px;
+      border:0;
+      .section-header--sup{
+        display: block;
+        top:115px;
+        left:20px;
+      }
+      .section-header{
+        display: block;
+        width:40%;
+        float: left;
+        margin: 0 0 0 80px;
+      }
+    }
+  }
+  .container{
+    .blog-item{
+      .thumbnail{}
+      .blog-item__description{
+        .blog-item__header{}
+        .blog-item__date{}
+        .blog-item__excerpt{}
+        .blog-item__permalink{}
+      }
+      &:nth-child(3n+2){}
+      &:nth-child(3n+3){}
+    }
+  }
+}
+// END page blog
+// page portfolio-category
+.section.category-portfolio{
+  .container{
+    .breadcrumbs{
+      & span{
+      }
+    }
+    .page-header{
+      .section-header--sup{
+      }
+      .section-header{
+      }
+    }
+  }
+  .filters-button-group{
+    .btn-tab{
+      img{
+      }
+      span{
+      }
+    }
+  }
+  #grid-container{
+    article{
+      & .thumbnail{
+      }
+      & .thumbnail-panel{
+        & h3{
+        }
+        & .social-link{
+        }
+      }
+      &:hover{
+        & .thumbnail{
+        }
+        & .thumbnail-panel{
+        }
+      }
+    }
+  }
+}
+// END page portfolio-category

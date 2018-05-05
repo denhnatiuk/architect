@@ -367,7 +367,34 @@ a{
 }
 /***END section portfolio***/
 /***section contact-form***/
+.section.contact-form{
+  #contactForm{
+    .section-header{
+      font-family: 'Exo2-MediumCondensed';
+      font-size: 2.222rem;
+      text-align: center;
 
+    }
+    .field-group{
+      .inputgroup{
+        input{}
+        label{}
+      }
+      #contactFormName{}
+      #contactFormPhone{}
+    }
+    .contact-form__submit{}
+    &>.inputgroup{
+      & #contactFormPolicy{}
+      & #contactFormPolicy ~ label{
+        text-indent: 3rem;
+        :before{
+        }
+      }
+    }
+    & .contact-form__message{}
+  }
+}
 /***END section contact-form***/
 /***footer**/
 .section.contacts{
@@ -462,3 +489,232 @@ a{
   }
 }
 /***END footer**/
+// page contacts
+.section.title-section{
+  .container{
+    .breadcrumbs{
+      text-transform: uppercase;
+      font-family: 'Exo2-RegularCondensed';
+      font-size: 0.8333rem;
+      line-height:  1.278rem;
+
+    }
+    .page-header{
+      .section-header--sup{
+
+      }
+      .section-header{
+        font-family: "PT-Serif-Caption-Web-Regular";
+        font-size: 2.222rem;
+        line-height: 1.944em;
+      }
+      .section-header--sub{
+        font-family: 'Exo2-MediumCondensed';
+        font-size: 1.389rem;
+        line-height: 1.389rem;
+        font-style: italic;
+      }
+    }
+  }
+}
+.section.contacts{
+  h2.contacts-page--subheader{
+    font-family: 'Exo2-MediumCondensed';
+    font-size: 1.222rem;
+    line-height: 1.222rem;
+    font-style: italic;
+  }
+  .contacts-page--social{
+    margin-top:0;
+  }
+}
+// END page contacts
+// page about
+.section.about-us--page-01{
+  .container{
+    .breadcrumbs{
+      text-transform: uppercase;
+      font-family: 'Exo2-RegularCondensed';
+      font-size: 0.8333rem;
+      line-height:  1.278rem;
+    }
+    .page-header{
+      .section-header--sup{
+
+      }
+      .section-header{
+        font-family: "PT-Serif-Caption-Web-Regular";
+        font-size: 2.222rem;
+        line-height: 1.944em;
+      }
+      .section-header--sub{
+        font-family: 'Exo2-MediumCondensed';
+        font-size: 1.389rem;
+        line-height: 1.389rem;
+        font-style: italic;
+      }
+    }
+    p{
+      font-family: "ProximaNova-Light";
+      font-size: 18px;
+      line-height: 1.667rem;
+    }
+  }
+}
+.section.about-us--page-02{
+  .container{
+    p{
+      font-family: "ProximaNova-Light";
+      font-size: 18px;
+      line-height: 1.667rem;
+    }
+  }
+}
+.section.about-us--page-03{
+  .container{
+    .section-header{
+      font-family: 'Exo2-MediumCondensed';
+      font-size: 1.222rem;
+
+    }
+    .about-us--media{
+      .brand-photo1{}
+      #aboutUsVideoTrigger{}
+    }
+    .about-us--page-03-description{
+      p{
+        font-family: "ProximaNova-Light";
+        font-size: 18px;
+        line-height: 1.667rem;
+      }
+      p:first-child{
+        font-family: 'Exo2-RegularCondensed';
+        font-size: 1rem;
+        line-height: 1.389rem;
+        font-style: italic;
+      }
+    }
+  }
+}
+// END page about
+// page blog
+.section.category-blog{
+  .container{
+    .breadcrumbs{
+      text-transform: uppercase;
+      font-family: 'Exo2-RegularCondensed';
+      font-size: 0.8333rem;
+      line-height:  1.278rem;
+    }
+    .page-header{
+      .section-header--sup{
+
+      }
+      .section-header{
+        font-family: "PT-Serif-Caption-Web-Regular";
+        font-size: 2.222rem;
+        line-height: 1.944em;
+      }
+    }
+  }
+  .container{
+    .blog-item{
+      .thumbnail{}
+      .blog-item__description{
+        .blog-item__header{
+          font-family: 'Exo2-MediumCondensed';
+          font-size: 1.222rem;
+        }
+        .blog-item__date{
+          font-family: 'Exo2-LightCondensed';
+          font-size: 0.7778rem;
+        }
+        .blog-item__excerpt{
+          font-family: 'ProximaNova-Semibold';
+          font-size: 0.8333rem;
+        }
+        .blog-item__permalink{
+          font-family: 'Exo2-RegularCondensed';
+          font-size: 0.8889rem;
+          text-decoration: underline;
+        }
+      }
+      &:nth-child(3n+2){}
+      &:nth-child(3n+3){}
+    }
+  }
+}
+// END page blog
+
+// page portfolio-category
+.section.category-portfolio{
+  .container{
+    .breadcrumbs{
+      & span{
+      }
+    }
+    .page-header{
+      .section-header--sup{
+      }
+      .section-header{
+      }
+    }
+  }
+  .filters-button-group{
+    .btn-tab{
+      img{
+      }
+      span{
+      }
+    }
+  }
+  #grid-container{
+    article{
+      & .thumbnail{
+      }
+      & .thumbnail-panel{
+        & h3{
+          font-family: 'Exo2-RegularCondensed';
+          font-size: 0.8333rem;
+          line-height:  1.278rem;
+        }
+        & .social-link{
+          line-height: 1rem;
+          font-size: 1rem;
+          text-align: center;
+          &.instagram:before{
+            content: '\f16d';
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1rem;
+          }
+        }
+      }
+      &:hover{
+        & .thumbnail{
+        }
+        & .thumbnail-panel{
+          font-family: 'Exo2-RegularCondensed';
+          font-size: 0.8333rem;
+        }
+      }
+    }
+  }
+  .portfolio-add-more{
+    .btn-dblarrow{
+      position: relative;
+      overflow: visible;
+      margin-left:40%;
+      margin-bottom: 50px;
+      width:20%;
+      &:after{
+        font-family: FontAwesome;
+        content:'\f021';
+        position: absolute;
+        right:-0.5rem;
+      }
+    }
+  }
+}
+// END page portfolio-category

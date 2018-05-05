@@ -331,10 +331,79 @@ a{
 }
 /***END section portfolio***/
 /***section contact-form***/
-#contactForm{
-  background: rgba(0,0,0,0.5);
-  & .section-header{
-    color:#fff;
+.section.contact-form{
+  & #contactForm{
+    background: rgba(0,0,0,0.5);
+    & .section-header{
+      color:#fff;
+      &:after{
+        display: block;
+        content:'';
+        width:10%;
+        height: 0.5rem;
+        border-bottom: 2px solid $hover;
+        margin-left: 45%;
+      }
+    }
+    & .field-group{
+      .inputgroup{
+        input{
+          background: inherit;
+          border: 0;
+          border-bottom: 2px solid $hover;
+          color:#aaa9a7;
+        }
+        label{
+          color:#aaa9a7;
+        }
+      }
+      #contactFormName{}
+      #contactFormPhone{}
+    }
+    .contact-form__submit{
+      color:#fff;
+      & button:after{
+        right:-15px;
+        background-color:  transparent;
+        //rgba(35,37,34,1);
+        // rgba(61,56,52,0.9);
+        line-height: 1.25rem;
+      }
+    }
+    &>.inputgroup{
+      & #contactFormPolicy{
+        opacity: 0;
+      }
+      & #contactFormPolicy + label{
+        color: #aaa9a7;
+      }
+      label {
+        cursor: pointer;
+      }
+      input[type="checkbox"] + label:before {
+        border: 1px solid #aaa9a7;
+        content: "\00a0";
+        display: inline-block;
+        height: 16px;
+        margin: 0 .25em 0 0;
+        padding: 0;
+        vertical-align: top;
+        width: 16px;
+        text-indent: 0;
+      }
+      input[type="checkbox"]:checked + label:before {
+        background: transparent;
+        color: #aaa9a7;
+        content: "\2713";
+        text-align: center;
+        font-size: 1.2rem;
+        line-height: 0.3rem;
+      }
+      input[type="checkbox"]:checked + label:after {
+        font-weight: bold;
+      }
+    }
+    & .contact-form__message{}
   }
 }
 /***END section contact-form***/
@@ -376,3 +445,242 @@ a{
   }
 }
 /***END footer**/
+// page contacts
+.section.title-section{
+  .container{
+    .breadcrumbs{
+      color:#000;
+      & span:first-child{
+        color: $hover;
+      }
+    }
+    .page-header{
+      .section-header--sup{
+
+      }
+      .section-header{
+        font-family: "PT-Serif-Caption-Web-Regular";
+        font-size: 2.222rem;
+        line-height: 1.944em;
+      }
+      .section-header--sub{}
+    }
+  }
+}
+// END page contacts
+// page about
+.section.about-us--page-01{
+  .container{
+    .breadcrumbs{
+      color:#000;
+      & span:first-child{
+        color: $hover;
+      }
+    }
+    .page-header{
+      .section-header--sup{
+
+      }
+      .section-header{
+        font-family: "PT-Serif-Caption-Web-Regular";
+        font-size: 2.222rem;
+        line-height: 1.944em;
+      }
+      .section-header--sub{}
+    }
+    & .about-us--page-description{
+      border: 1px solid $hover;
+
+    }
+  }
+}
+.section.about-us--page-02{
+  background-color: $dark;
+  color: #fff;
+  .container{
+  }
+}
+.section.about-us--page-03{
+  .container{
+    .section-header{
+      background-color: #fff;
+      &:before{
+        content:'';
+        display: block;
+        width:3rem;
+        border-bottom: 2px solid $dark;
+        position: absolute;
+        left:-2rem;
+        top:0.5rem;
+      }
+    }
+    .about-us--media{
+      .brand-photo1{}
+      #aboutUsVideoTrigger{}
+    }
+    .about-us--page-03-description{
+      border:1px solid rgba(35,35,35,0.2);
+      p{
+      }
+      p:first-child{
+      }
+    }
+  }
+}
+// page blog
+.section.category-blog{
+  .container{
+    .breadcrumbs{
+      color:#000;
+      & span:first-child{
+        color: $hover;
+      }
+    }
+    .page-header{
+      display: inline-block;
+      width: 100%;
+      margin:0;
+      padding-bottom: 40px;
+      border:0;
+      .section-header--sup{
+        display: block;
+        top:115px;
+        left:20px;
+      }
+      .section-header{
+        display: block;
+        width:40%;
+        float: left;
+        margin: 0 0 0 80px;
+      }
+    }
+  }
+  .container{
+    .blog-item{
+      background-color: $dark;
+      color:#fff;
+      &:hover{
+        background-color: $hover;
+        color: $dark;
+        .blog-item__permalink{
+            color: $dark;
+        }
+      }
+      .thumbnail{
+      }
+      .blog-item__description{
+
+        .blog-item__header{}
+        .blog-item__date{}
+        .blog-item__excerpt{}
+        .blog-item__permalink{
+          &:hover{
+            color: $dark;
+          }
+        }
+      }
+    }
+    .btn-dblarrow{
+      background-color: #fff;
+      border:2px solid $hover;
+      &:after{
+        color: $hover;
+        background-color: #fff;
+      }
+    }
+  }
+}
+// END page blog
+// page portfolio-category
+.section.category-portfolio{
+  .container{
+    .breadcrumbs{
+      color:#000;
+      & span:first-child{
+        color: $hover;
+      }
+    }
+    .page-header{
+      display: inline-block;
+      width: 100%;
+      margin:0;
+      padding-bottom: 40px;
+      border:0;
+      .section-header--sup{
+        display: block;
+        top:115px;
+        left:20px;
+      }
+      .section-header{
+        display: block;
+        width:40%;
+        float: left;
+        margin: 0 0 0 80px;
+      }
+    }
+  }
+  .filters-button-group{
+    .btn-tab{
+      background-color: $dark;
+      color: #fff;
+      img{
+      }
+      span{
+        background-color: $dark;
+        &:after{
+          content:'';
+          display:none;
+          width:100%;
+          height:100%;
+          border: 2px solid $hover;
+          position: absolute;
+          top:0;
+          left:0;
+          right:0;
+          bottom:0;
+        }
+      }
+      &:hover{
+        span{
+          background-color: rgba(26, 23, 27, 0.5);
+          &:after{
+            display: block;
+            transform: scale(0.8);
+          }
+        }
+      }
+    }
+  }
+  #grid-container{
+    article{
+      & .thumbnail{
+      }
+      & .thumbnail-panel{
+        background-color: $dark;
+        & h3{
+        }
+        & .social-link{
+        }
+      }
+      &:hover{
+        & .thumbnail-panel{
+            background-color: $dark;
+            color: #fff;
+            & .social-link{
+              color:$hover;
+              border: 1px solid $hover;
+            }
+        }
+      }
+    }
+  }
+  .btn-dblarrow{
+    background-color: #fff;
+    border:2px solid $hover;
+    &:after{
+      color: $hover;
+      background-color: #fff;
+    }
+  }
+}
+// END page portfolio-category

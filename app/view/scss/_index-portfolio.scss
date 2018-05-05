@@ -1,0 +1,155 @@
+/***section portfolio***/
+.section.portfolio{
+  overflow: hidden;
+  & .tab-container{
+    padding: 0;
+    &>div{
+      & .nav.nav-tabs.nav-tabs-left.nav-centered{
+        float: left;
+        border-right: 0;
+        border-bottom: 0;
+        width: 100%;
+        padding-bottom: 70px;
+        & .portfolio-header{
+          margin-bottom: 50px;
+          & .section-header--sup{}
+          & .section-header{
+            margin-left: 50px;
+          }
+        }
+        & li{
+          display: block;
+          float: none;
+          height: 100px;
+          margin: 0;
+          padding: 50px 0 0 0;
+        	text-align: left;
+          & .tabs-count{
+            position: absolute;
+            left:-3rem;
+            transform: translate(-30px,-50px);
+            display: none;
+          }
+          & a{
+            padding: 0;
+            display: block;
+            margin-right: 0;
+            border-radius: 0;
+            border: 0;
+            width: 100%;
+            text-align: left;
+
+          }
+          &:after{
+          }
+        }
+        & li:first-child{
+          margin-top: 30px;
+        }
+        & li.active{
+            & span{
+              display: block;
+            }
+            & a{}
+            &:after{
+              content: '—';
+              position: absolute;
+              right: 0;
+              top:60px;
+            }
+        }
+        & .btn-arrow{
+          display: block;
+          margin:50px 5px 50px 0;
+        }
+      }
+    }
+    & .container{
+      position: absolute;
+      top:0;
+      left:292px;
+      & #portfoiloTabs{
+        padding:50px;
+        & .tab-pane{
+          position: relative;
+          margin:0 -15px;
+          & .col-md-4{
+            overflow: hidden;
+            padding: 0;
+            height: 300px;
+            // margin:0 15px;
+            &:hover{
+              overflow: visible;
+              transform: scale(1.2) translate(0, -45px);
+              height: 300px;
+              z-index: 5;
+              & .thumbnail{
+                filter: none;
+                // position: absolute;
+                top:0;
+                margin:0 15px;
+                // left: 0;
+                // right:0;
+                z-index: 5;
+              }
+              & .thumbnail-panel{
+                // transform: scale(1.2);
+                z-index: 5;
+                opacity: 1;
+                box-sizing: border-box;
+                height: auto;
+                // left: 15px;
+                // right: -15px;
+                padding: 15px;
+                transition: all 0.3s ease-in-out;
+              }
+            }
+            & .thumbnail{
+              // max-width:320px;
+              width: 100%;
+              height: 250px;
+              padding: 0;
+              margin:15px;
+              border:0;
+              border-radius: 0;
+              filter: grayscale(1);
+            }
+            & .thumbnail-panel{
+              position: absolute;
+              top:0px;
+              left: 15px;
+              right:15px;
+              width:100%;
+              opacity: 0;
+              height:0;
+              & h3{
+                width: 80%;
+                float: left;
+              }
+              & .social-link{
+                float: right;
+                padding: 0.25rem;
+                display: block;
+                width: 1.5rem;
+                height: 1.5rem;
+                margin-right: 0.5rem;
+                z-index: 5;
+
+              }
+            }
+          }
+          & .btn-arrow{
+            margin-left:34%;
+            width:33%;
+          }
+        }
+        & #appInterior{}
+        & #pubInterior{}
+        & #cottage{}
+        & #exterior{}
+      }
+    }
+  }
+}
+
+/***END section portfolio***/
