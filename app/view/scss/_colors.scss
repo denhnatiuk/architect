@@ -684,3 +684,124 @@ a{
   }
 }
 // END page portfolio-category
+// page portfolio-single
+.section.portfolio-single{
+  .container{
+    .breadcrumbs{
+      color:#000;
+      & span:first-child{
+        color: $hover;
+      }
+    }
+    .page-header{
+      display: inline-block;
+      width: 100%;
+      margin:0;
+      padding-bottom: 40px;
+      border:0;
+      .section-header--sup{
+        display: block;
+        top:115px;
+        left:20px;
+      }
+      .section-header{
+        display: block;
+        width:40%;
+        float: left;
+        margin: 0 0 0 80px;
+      }
+    }
+  }
+  #gridItemView{
+    #gridItemLayout{
+      img{
+        width:100%;
+        border: 6px solid $hover;
+        border-radius: 5px;
+      }
+      .modal-escape{
+        border-radius: 50%;
+        background-color: $dark;
+        border-color: $dark;
+        color: $hover;
+        &:hover{
+          color:$dark;
+          background-color: $hover;
+          border-color: $hover;
+        }
+      }
+      #prev{
+        border-radius: 50%;
+        background-color: $dark;
+        border-color: $dark;
+        color: $hover;
+        &:hover{
+          color:$dark;
+          background-color: $hover;
+          border-color: $hover;
+        }
+      }
+      #next{
+        border-radius: 50%;
+        background-color: $dark;
+        border-color: $dark;
+        color: $hover;
+        &:hover{
+          color:$dark;
+          background-color: $hover;
+          border-color: $hover;
+        }
+      }
+    }
+  }
+}
+// END page portfolio-single
+
+.section.single-service.author-support{
+  .container{
+    .breadcrumbs{
+      color:$dark;
+      & span:first-child{
+        color: $hover;
+      }
+    }
+    .page-header{
+      .section-header{
+        color: #fff;
+      }
+      .section-header--sup{
+        color: #fff;
+      }
+      &:before{
+        background-color: $dark;
+      }
+    }
+  }
+  .service-features{
+    .necessarity-header{
+      .section-header--sup{}
+      .section-title{}
+    }
+  }
+  .price-list-item.active{
+    .price-list--header{
+      color: $hover;
+    }  
+  }
+  .calc-price-wrapper{
+    background-color: $dark;
+    color:#fff;
+    & p{
+      & span{
+        color: $hover;
+      }
+    }
+    & .btn-arrow{
+      color:#fff;
+      &:after{
+        background-color: $dark;
+        color:#fff;
+      }
+    }
+  }
+}

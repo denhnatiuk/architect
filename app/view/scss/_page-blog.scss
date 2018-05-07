@@ -1,0 +1,83 @@
+// page blog
+.section.category-blog{
+  .container{
+    &:before {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: -134px;
+    right: -136px;
+    top: 0;
+    bottom: 0;
+    }
+    .breadcrumbs{
+      // margin-left: 50px;
+      & span{
+        margin:0 0.5rem;
+      }
+    }
+    .page-header{
+      display: inline-block;
+      width: 100%;
+      margin:0;
+      padding-top: 40px;
+      border:0;
+      .section-header--sup{
+        display: block;
+        top:80px;
+        left:20px;
+      }
+      .section-header{
+        display: block;
+        width:40%;
+        float: left;
+        margin: 20px 0 0 80px;
+      }
+    }
+  }
+  .container{
+    &>div{
+      top:-100px;
+      &:nth-child(3n+2){
+        transform: translateY(-50px);
+      }
+      &:nth-child(3n+3){
+        transform: translateY(-100px);
+      }
+      .blog-item{
+        margin:15px 0;
+        .thumbnail{
+          padding:0;
+          margin: 0;
+          border:0;
+          border-radius: 0;
+          display: block;
+        }
+        .blog-item__description{
+          display: block;
+          padding: 40px;
+          .blog-item__header{}
+          .blog-item__date{}
+          .blog-item__excerpt{
+            padding-top: 30px;
+          }
+          .blog-item__permalink{}
+        }
+      }
+    }
+    .btn-dblarrow{
+      position: relative;
+      overflow: visible;
+      margin-left:40%;
+      margin-bottom: 50px;
+      width:20%;
+      &:after{
+        font-family: FontAwesome;
+        content:'\f021';
+        position: absolute;
+        right:-0.5rem;
+      }
+    }
+  }
+}
+// END page blog

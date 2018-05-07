@@ -151,14 +151,116 @@
           </div>
           <img src="./images/plan.png" alt="" class="img-responsive" style="padding:15px;">
           <div class="grid js-masonry masonry-wrapper">
-            <div class="grid-item"><img src="./images/single-portfolio-masonry-1.png" alt="" ></div>
-            <div class="grid-item grid-item--w2"><img src="./images/single-portfolio-masonry-2.png" alt="" ></div>
-            <div class="grid-item grid-item--w2"><img src="./images/single-portfolio-masonry-3.png" alt="" ></div>
-            <div class="grid-item"><img src="./images/single-portfolio-masonry-4.png" alt="" ></div>
-            <div class="grid-item"><img src="./images/single-portfolio-masonry-5.png" alt="" ></div>
-            <div class="grid-item"><img src="./images/single-portfolio-masonry-6.png" alt="" ></div>
-            <div class="grid-item"><img src="./images/single-portfolio-masonry-7.png" alt="" ></div>
+            <div class="grid-item" data-toggle="modal" data-target="#gridItemView"><img src="./images/single-portfolio-masonry-1.png" alt="" ></div>
+            <div class="grid-item grid-item--w2" data-toggle="modal" data-target="#gridItemView"><img src="./images/single-portfolio-masonry-2.png" alt="" ></div>
+            <div class="grid-item grid-item--w2" data-toggle="modal" data-target="#gridItemView"><img src="./images/single-portfolio-masonry-3.png" alt="" ></div>
+            <div class="grid-item" data-toggle="modal" data-target="#gridItemView"><img src="./images/single-portfolio-masonry-4.png" alt="" ></div>
+            <div class="grid-item" data-toggle="modal" data-target="#gridItemView"><img src="./images/single-portfolio-masonry-5.png" alt="" ></div>
+            <div class="grid-item" data-toggle="modal" data-target="#gridItemView"><img src="./images/single-portfolio-masonry-6.png" alt="" ></div>
+            <div class="grid-item" data-toggle="modal" data-target="#gridItemView"><img src="./images/single-portfolio-masonry-7.png" alt="" ></div>
           </div>
+          <div class="modal fade" id="gridItemView" role="dialog">
+            <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+              <div class="modal-content" id="gridItemLayout">
+              </div>
+            </div>
+          </div>
+          <script>
+            var gridItems = document.getElementsByClassName('grid-item');
+            var controls = '<button type="button" class="modal-control" id="prev"><</button><button type="button" class="modal-control" id="next">></button><button type="button" class="modal-escape" data-dismiss="modal">x</button>';
+            var layout = document.getElementById('gridItemLayout');
+            layout.innerHTML += controls;
+            var prev =  document.getElementById('prev');
+            var next =  document.getElementById('next');
+            function getNext(item){return item.nextSibling.innerHTML}
+            function getPrevious(item){return item.previousSibling.innerHTML}
+
+            for (var i = 0; i < gridItems.length; i++){
+              (function () {
+              var j = i;
+              var gridItem = gridItems[i];
+              var inner = gridItems[i].children[0];
+              if( i == 0 ){
+                var prevItem = gridItems[6];
+                var nextItem = gridItems[++j];
+                prev.style = 'display:none';
+              } else if (i == gridItems.length) {
+                var prevItem = gridItems[--j];
+                var nextItem = gridItems[0];
+                next.style = 'display:none';
+              } else {
+                var prevItem = gridItems[--j];
+                var nextItem = gridItems[++j];
+                prev.style = 'display:block';
+                next.style = 'display:block';
+              }
+              var prevInner = prevItem.innerHTML;
+              var nextInner = nextItem.innerHTML;
+              // console.log(prevInner);
+              // console.log(inner);
+              // console.log(nextInner);
+              gridItems[i].addEventListener('click', function(){
+                // var layout = document.getElementById('gridItemLayout');
+                // var gridItem = gridItems[i];
+                // var inner = gridItems[i].children[0];
+                console.log (inner);
+                var cloned = inner.cloneNode(true);
+                if(!layout.querySelector('img')){
+                  layout.appendChild(cloned);
+                  // layout.innerHTML = inner;
+                } else {
+                  layout.removeChild(layout.lastChild);
+                  // layout.innerHTML = inner;
+                  layout.appendChild(cloned);
+                  // layout.innerHTML += inner;
+                }
+              });
+              prev.addEventListener('click', function(){
+                if(!layout.querySelector('img')){
+                  // layout.appendChild(cloned);
+                  layout.innerHTML += prevInner;
+                } else {
+                  layout.removeChild(layout.lastChild);
+                  // layout.appendChild(cloned);
+                  layout.innerHTML += prevInner;
+                }
+                // cloned = prevInner.cloneNode(true);
+                // layout.appendChild(cloned);
+                console.log (prevInner);
+              });
+              next.addEventListener('click', function(){
+                if(!layout.querySelector('img')){
+                  // layout.appendChild(cloned);
+                  layout.innerHTML += nextInner;
+                } else {
+                  layout.removeChild(layout.lastChild);
+                  // layout.appendChild(cloned);
+                  layout.innerHTML += nextInner;
+                }
+              });
+              // console.log (prevInner);
+              // console.log (nextInner);
+              // console.log (inner);
+              // var cloned = inner.cloneNode(true);
+              // gridItems[i].addEventListener('click', function(){
+              //   var layout = document.getElementById('gridItemLayout');
+              //   var gridItem = gridItems[i];
+              //   var inner = gridItems[i].children[0];
+              //   console.log (inner);
+              //   var cloned = inner.cloneNode(true);
+              //   if(!layout.querySelector('img')){
+              //     var a = layout.appendChild(cloned);
+              //     // layout.innerHTML += inner;
+              //   } else {
+              //     layout.removeChild(layout.lastChild);
+              //     layout.appendChild(cloned);
+              //     // layout.innerHTML += inner;
+              //   }
+              // });
+              }()); // immediate invocation
+            }
+          </script>
         </div>
       </div>
       <div class="row section contact-form">

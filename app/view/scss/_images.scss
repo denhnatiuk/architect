@@ -284,3 +284,25 @@
   }
 }
 // END page portfolio-category
+.section.single-service.author-support{
+  .container{
+    .col-md-push-2{
+      &:after{
+          content:'';
+          display: block;
+          width:100%;
+          height:800px;
+          position: absolute;
+          top:-250px;
+          left:0;
+          z-index: -1;
+          transform: rotate(90deg);
+          background: url(../images/design.png);
+          //url(../images/desing.png);
+          background-position: top left;
+          background-repeat: no-repeat;
+          background-size: 30%;
+      }
+    }
+  }
+}

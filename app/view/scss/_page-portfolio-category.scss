@@ -1,0 +1,141 @@
+// page portfolio-category
+.section.category-portfolio{
+  .container{
+    &:before {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: -134px;
+    right: -136px;
+    top: 0;
+    bottom: 0;
+    }
+    .breadcrumbs{
+      // margin-left: 50px;
+      & span{
+        margin:0 0.5rem;
+      }
+    }
+    .page-header{
+      display: inline-block;
+      width: 100%;
+      margin:0;
+      padding-top: 40px;
+      border:0;
+      .section-header--sup{
+        display: block;
+        top:132px;
+        left:20px;
+      }
+      .section-header{
+        display: block;
+        width:40%;
+        float: left;
+        margin: 0 0 0 80px;
+      }
+    }
+  }
+  .filters-button-group{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .btn-tab{
+      position: relative;
+      width: 240px;
+      margin:15px;
+      padding: 0;
+      border:0;
+      border-radius: 0;
+      overflow:hidden;
+      transition: all 0.3s ease-in-out;
+      img{
+        width:auto;
+        height: 400px;
+      }
+      span{
+        display: block;
+        width:100%;
+        height:4rem;
+        padding:0.8rem 15px;
+        position: absolute;
+        bottom:0;
+        left:0;
+
+      }
+      &:hover{
+        span{
+          height: 100%;
+          padding-top:80%;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+  #grid-container{
+    padding: 80px;
+    article{
+      padding:0;
+      max-width:18%;
+      // max-height:200px;
+      & .thumbnail{
+        // max-width:320px;
+        width: 100%;
+        height: 250px;
+        padding: 1%;
+        border:0;
+        border-radius: 0;
+        filter: grayscale(1);
+      }
+      & .thumbnail-panel{
+        position: absolute;
+        top:0px;
+        // left: 15px;
+        // right:15px;
+        width:100%;
+        opacity: 0;
+        height:0;
+        & h3{
+          width: 80%;
+          float: left;
+          margin:0;
+        }
+        & .social-link{
+          float: right;
+          padding: 0.25rem;
+          display: block;
+          width: 1.5rem;
+          height: 1.5rem;
+          margin-right: 0.5rem;
+          z-index: 5;
+        }
+      }
+      &:hover{
+        overflow: visible;
+        transform: scale(1.2) translate(0, -45px);
+        height: 300px;
+        z-index: 5;
+        & .thumbnail{
+          filter: none;
+          // position: absolute;
+          top:0;
+          margin:0;
+          // left: 0;
+          // right:0;
+          z-index: 5;
+        }
+        & .thumbnail-panel{
+          z-index: 5;
+          opacity: 1;
+          box-sizing: border-box;
+          height: auto;
+          // left: 15px;
+          // right: -15px;
+          padding: 15px;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+}
+// END page portfolio-category

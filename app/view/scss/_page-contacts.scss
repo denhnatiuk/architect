@@ -1,0 +1,54 @@
+// page contacts
+.section.title-section{
+  .container{
+    &:before {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: -134px;
+    right: -136px;
+    top: 0;
+    bottom: 0;
+    }
+    .breadcrumbs{
+      // margin-left: 50px;
+      & span{
+        margin:0 0.5rem;
+      }
+    }
+    .page-header{
+      display: inline-block;
+      width: 100%;
+      margin:0;
+      padding-bottom: 40px;
+      border:0;
+      .section-header--sup{
+        display: block;
+        top:115px;
+        left:20px;
+      }
+      .section-header{
+        display: block;
+        width:40%;
+        float: left;
+        margin: 0 0 0 80px;
+      }
+      .section-header--sub{
+        display: block;
+        float: right;
+        width:50%;
+        padding-left: 100px;
+      }
+    }
+  }
+}
+.section.contacts{
+  h2.contacts-page--subheader{
+    display: block;
+    margin:30px 0;
+  }
+  .social.contacts-page--social{
+    margin-top:0;
+  }
+}
+// END page contacts

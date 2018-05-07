@@ -1,0 +1,76 @@
+.section.portfolio-single{
+  .container{
+    &:before {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: -134px;
+    right: -136px;
+    top: 0;
+    bottom: 0;
+    }
+    .breadcrumbs{
+      // margin-left: 50px;
+      & span{
+        margin:0 0.5rem;
+      }
+    }
+    .page-header{
+      display: inline-block;
+      width: 100%;
+      margin:0;
+      padding-top: 40px;
+      border:0;
+      .section-header--sup{
+        display: block;
+        top:132px;
+        left:20px;
+      }
+      .section-header{
+        display: block;
+        width:200px;
+        float: left;
+        margin: 0 0 0 80px;
+      }
+    }
+  }
+  p{
+    padding: 30px;
+  }
+  .grid-item{
+    img{
+      filter: grayscale(1);
+      &:hover{
+        filter: grayscale(0);
+      }
+    }
+  }
+  #gridItemView{
+    #gridItemLayout{
+      img{
+        width:100%;
+      }
+      .modal-escape{
+        position: absolute;
+        top:-15px;
+        right:-15px;
+      }
+      #prev{
+        position: absolute;
+        top:50%;
+        left:20px;
+      }
+      #next{
+        position: absolute;
+        top:50%;
+        right:20px;
+      }
+      button{
+        display: block;
+        width:1.5rem;
+        height:1.5rem;
+        padding: 0 0.35rem;
+      }
+    }
+  }
+}

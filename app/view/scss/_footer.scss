@@ -74,7 +74,7 @@
     position: relative;
     z-index: 1;
     max-width: 80%;
-    height:120px;
+    height:100px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -123,5 +123,11 @@
     display: none;
     visibility: hidden;
   }
+}
+.site-footer .footer .container{
+  padding-top: 0;
+}
+.site-footer .section .container{
+  padding-top: 0;
 }
 /***END footer**/

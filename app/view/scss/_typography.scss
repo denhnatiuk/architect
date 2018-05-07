@@ -545,7 +545,7 @@ a{
       .section-header{
         font-family: "PT-Serif-Caption-Web-Regular";
         font-size: 2.222rem;
-        line-height: 1.944em;
+        line-height: 2.222rem;
       }
       .section-header--sub{
         font-family: 'Exo2-MediumCondensed';
@@ -613,7 +613,7 @@ a{
       .section-header{
         font-family: "PT-Serif-Caption-Web-Regular";
         font-size: 2.222rem;
-        line-height: 1.944em;
+        line-height: 2.222rem;
       }
     }
   }
@@ -648,6 +648,24 @@ a{
 
 // page portfolio-category
 .section.category-portfolio{
+  .container{
+    .breadcrumbs{
+      text-transform: uppercase;
+      font-family: 'Exo2-RegularCondensed';
+      font-size: 0.8333rem;
+      line-height:  1.278rem;
+    }
+    .page-header{
+      .section-header--sup{
+
+      }
+      .section-header{
+        font-family: "PT-Serif-Caption-Web-Regular";
+        font-size: 2.222rem;
+        line-height: 2.222rem;
+      }
+    }
+  }
   .container{
     .breadcrumbs{
       & span{
@@ -718,3 +736,202 @@ a{
   }
 }
 // END page portfolio-category
+// page portfolio-single
+.section.portfolio-single{
+  .container{
+    .breadcrumbs{
+      text-transform: uppercase;
+      font-family: 'Exo2-RegularCondensed';
+      font-size: 0.8333rem;
+      line-height:  1.278rem;
+    }
+    .page-header{
+      .section-header--sup{
+
+      }
+      .section-header{
+        font-family: "PT-Serif-Caption-Web-Regular";
+        font-size: 2.222rem;
+        line-height: 2.222rem;
+      }
+    }
+  }
+  p{
+    font-family: "ProximaNova-Light";
+    font-size: 1rem;
+    line-height: 1.944rem;
+  }
+  #gridItemView{
+    #gridItemLayout{
+      button{
+        font-family: "ProximaNova-Light";
+        font-size: 1rem;
+        line-height: 0.1rem;
+        font-weight: bold;
+
+      }
+    }
+  }
+}
+// END page portfolio-single
+// page service-author-support
+.section.single-service.author-support{
+  .container{
+      .breadcrumbs{
+        text-transform: uppercase;
+        font-family: 'Exo2-RegularCondensed';
+        font-size: 0.8333rem;
+        line-height:  1.278rem;
+      }
+      .page-header{
+        .section-header--sup{
+          font-family: 'ProximaNova-Semibold';
+          font-size: 1.667rem;
+          text-align: center;
+        }
+        .section-header{}
+      }
+      .section-title{
+          font-family: "PT-Serif-Caption-Web-Regular";
+          font-size: 2.222rem;
+          line-height: 2.222rem;
+      }
+      &:before{
+
+      }
+  }
+  .hero-header-wrapper{
+    img{
+
+    }
+  }
+  .necessarity{
+    .section-header{
+      padding: 40px;
+      .section-header--sup{
+        font-family: 'ProximaNova-Semibold';
+        font-size: 1.667rem;
+        text-align: center;
+      }
+      .section-title{
+        font-family: "PT-Serif-Caption-Web-Regular";
+        font-size: 2.222rem;
+        line-height: 2.222rem;
+      }
+    }
+    p{
+      font-family: "ProximaNova-Light";
+      font-size: 1rem;
+      font-weight: normal;
+      line-height:  1.667rem;
+      span{
+        font-family: "Exo2-MediumCondensed";
+        font-size: 1.222rem;
+        line-height: 1.622rem;
+        text-align: left;
+      }
+    }
+    .col-xs-push-0{
+      &:after{
+      }
+    }
+  }
+  .service-features{
+    .service-features-header{
+      .section-header--sup{
+        top:70px;
+        font-family: 'ProximaNova-Semibold';
+        font-size: 1.667rem;
+        text-align: center;
+      }
+      .section-title{
+        margin:0;
+        padding-left:40px;
+        font-family: "PT-Serif-Caption-Web-Regular";
+        font-size: 2.222rem;
+        line-height: 2.222rem;
+      }
+    }
+    .service-feature-item{
+      position: relative;
+      width:33%;
+      float: left;
+      padding: 30px 50px;
+      .service-feature-count{
+        font-family: "Exo2-MediumCondensed";
+        font-size: 1.389rem;
+        line-height: 1.622rem;
+        text-align: left;
+      }
+      .service-feature-header{
+        font-family: "Exo2-MediumCondensed";
+        font-size: 1.222rem;
+        line-height: 1.622rem;
+        text-align: left;
+      }
+      .service-feature-description{
+        font-family: 'ProximaNova-Regular';
+      }
+    }
+  }
+  .calc-price{
+    .calc-price-header{
+      .section-header--sup{
+        top:70px;
+        font-family: 'ProximaNova-Semibold';
+        font-size: 1.667rem;
+        text-align: center;
+      }
+      .section-title{
+        margin:0;
+        padding-left:40px;
+        font-family: "PT-Serif-Caption-Web-Regular";
+        font-size: 2.222rem;
+        line-height: 2.222rem;
+      }
+    }
+    .calc-price-wrapper{
+      & .price-list{
+        &>.price-list-item{
+          font-family: 'Exo2-MediumCondensed';
+          font-size: 1.222rem;
+          &>.price-list--header{
+            &:before{
+            }
+          }
+        }
+        &.price-list__collapsed{
+          &:before{
+          }
+          & .price-list-item{
+            & .price-list--header{
+            }
+            &.active{
+              &>.price-list--header{
+              }
+            }
+          }
+        }
+        &:before{
+        }
+      }
+      & .price-item--description-wrapper{
+        & .price-item--description{
+          &>.price-item{
+            &.visible{
+            }
+          }
+          & p{
+          }
+          & .btn-arrow{
+            text-align: center;
+            &:after{
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// END page service-author-support

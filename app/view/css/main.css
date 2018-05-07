@@ -584,7 +584,7 @@ a {
 .section.about-us--page-01 .container .page-header .section-header {
   font-family: "PT-Serif-Caption-Web-Regular";
   font-size: 2.222rem;
-  line-height: 1.944em; }
+  line-height: 2.222rem; }
 
 .section.about-us--page-01 .container .page-header .section-header--sub {
   font-family: 'Exo2-MediumCondensed';
@@ -626,7 +626,7 @@ a {
 .section.category-blog .container .page-header .section-header {
   font-family: "PT-Serif-Caption-Web-Regular";
   font-size: 2.222rem;
-  line-height: 1.944em; }
+  line-height: 2.222rem; }
 
 .section.category-blog .container .blog-item .blog-item__description .blog-item__header {
   font-family: 'Exo2-MediumCondensed';
@@ -644,6 +644,17 @@ a {
   font-family: 'Exo2-RegularCondensed';
   font-size: 0.8889rem;
   text-decoration: underline; }
+
+.section.category-portfolio .container .breadcrumbs {
+  text-transform: uppercase;
+  font-family: 'Exo2-RegularCondensed';
+  font-size: 0.8333rem;
+  line-height: 1.278rem; }
+
+.section.category-portfolio .container .page-header .section-header {
+  font-family: "PT-Serif-Caption-Web-Regular";
+  font-size: 2.222rem;
+  line-height: 2.222rem; }
 
 .section.category-portfolio #grid-container article .thumbnail-panel h3 {
   font-family: 'Exo2-RegularCondensed';
@@ -676,6 +687,117 @@ a {
     content: '\f021';
     position: absolute;
     right: -0.5rem; }
+
+.section.portfolio-single .container .breadcrumbs {
+  text-transform: uppercase;
+  font-family: 'Exo2-RegularCondensed';
+  font-size: 0.8333rem;
+  line-height: 1.278rem; }
+
+.section.portfolio-single .container .page-header .section-header {
+  font-family: "PT-Serif-Caption-Web-Regular";
+  font-size: 2.222rem;
+  line-height: 2.222rem; }
+
+.section.portfolio-single p {
+  font-family: "ProximaNova-Light";
+  font-size: 1rem;
+  line-height: 1.944rem; }
+
+.section.portfolio-single #gridItemView #gridItemLayout button {
+  font-family: "ProximaNova-Light";
+  font-size: 1rem;
+  line-height: 0.1rem;
+  font-weight: bold; }
+
+.section.single-service.author-support .container .breadcrumbs {
+  text-transform: uppercase;
+  font-family: 'Exo2-RegularCondensed';
+  font-size: 0.8333rem;
+  line-height: 1.278rem; }
+
+.section.single-service.author-support .container .page-header .section-header--sup {
+  font-family: 'ProximaNova-Semibold';
+  font-size: 1.667rem;
+  text-align: center; }
+
+.section.single-service.author-support .container .section-title {
+  font-family: "PT-Serif-Caption-Web-Regular";
+  font-size: 2.222rem;
+  line-height: 2.222rem; }
+
+.section.single-service.author-support .necessarity .section-header {
+  padding: 40px; }
+  .section.single-service.author-support .necessarity .section-header .section-header--sup {
+    font-family: 'ProximaNova-Semibold';
+    font-size: 1.667rem;
+    text-align: center; }
+  .section.single-service.author-support .necessarity .section-header .section-title {
+    font-family: "PT-Serif-Caption-Web-Regular";
+    font-size: 2.222rem;
+    line-height: 2.222rem; }
+
+.section.single-service.author-support .necessarity p {
+  font-family: "ProximaNova-Light";
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.667rem; }
+  .section.single-service.author-support .necessarity p span {
+    font-family: "Exo2-MediumCondensed";
+    font-size: 1.222rem;
+    line-height: 1.622rem;
+    text-align: left; }
+
+.section.single-service.author-support .service-features .service-features-header .section-header--sup {
+  top: 70px;
+  font-family: 'ProximaNova-Semibold';
+  font-size: 1.667rem;
+  text-align: center; }
+
+.section.single-service.author-support .service-features .service-features-header .section-title {
+  margin: 0;
+  padding-left: 40px;
+  font-family: "PT-Serif-Caption-Web-Regular";
+  font-size: 2.222rem;
+  line-height: 2.222rem; }
+
+.section.single-service.author-support .service-features .service-feature-item {
+  position: relative;
+  width: 33%;
+  float: left;
+  padding: 30px 50px; }
+  .section.single-service.author-support .service-features .service-feature-item .service-feature-count {
+    font-family: "Exo2-MediumCondensed";
+    font-size: 1.389rem;
+    line-height: 1.622rem;
+    text-align: left; }
+  .section.single-service.author-support .service-features .service-feature-item .service-feature-header {
+    font-family: "Exo2-MediumCondensed";
+    font-size: 1.222rem;
+    line-height: 1.622rem;
+    text-align: left; }
+  .section.single-service.author-support .service-features .service-feature-item .service-feature-description {
+    font-family: 'ProximaNova-Regular'; }
+
+.section.single-service.author-support .calc-price .calc-price-header .section-header--sup {
+  top: 70px;
+  font-family: 'ProximaNova-Semibold';
+  font-size: 1.667rem;
+  text-align: center; }
+
+.section.single-service.author-support .calc-price .calc-price-header .section-title {
+  margin: 0;
+  padding-left: 40px;
+  font-family: "PT-Serif-Caption-Web-Regular";
+  font-size: 2.222rem;
+  line-height: 2.222rem; }
+
+.section.single-service.author-support .calc-price .calc-price-wrapper .price-list > .price-list-item {
+  font-family: 'Exo2-MediumCondensed';
+  font-size: 1.222rem; }
+
+.section.single-service.author-support .calc-price .calc-price-wrapper .price-item--description-wrapper .price-item--description .btn-arrow {
+  text-align: center; }
 
 a {
   color: #fff; }
@@ -1104,6 +1226,90 @@ a {
     color: #e8d7bb;
     background-color: #fff; }
 
+.section.portfolio-single .container .breadcrumbs {
+  color: #000; }
+  .section.portfolio-single .container .breadcrumbs span:first-child {
+    color: #e8d7bb; }
+
+.section.portfolio-single .container .page-header {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 40px;
+  border: 0; }
+  .section.portfolio-single .container .page-header .section-header--sup {
+    display: block;
+    top: 115px;
+    left: 20px; }
+  .section.portfolio-single .container .page-header .section-header {
+    display: block;
+    width: 40%;
+    float: left;
+    margin: 0 0 0 80px; }
+
+.section.portfolio-single #gridItemView #gridItemLayout img {
+  width: 100%;
+  border: 6px solid #e8d7bb;
+  border-radius: 5px; }
+
+.section.portfolio-single #gridItemView #gridItemLayout .modal-escape {
+  border-radius: 50%;
+  background-color: #1a171b;
+  border-color: #1a171b;
+  color: #e8d7bb; }
+  .section.portfolio-single #gridItemView #gridItemLayout .modal-escape:hover {
+    color: #1a171b;
+    background-color: #e8d7bb;
+    border-color: #e8d7bb; }
+
+.section.portfolio-single #gridItemView #gridItemLayout #prev {
+  border-radius: 50%;
+  background-color: #1a171b;
+  border-color: #1a171b;
+  color: #e8d7bb; }
+  .section.portfolio-single #gridItemView #gridItemLayout #prev:hover {
+    color: #1a171b;
+    background-color: #e8d7bb;
+    border-color: #e8d7bb; }
+
+.section.portfolio-single #gridItemView #gridItemLayout #next {
+  border-radius: 50%;
+  background-color: #1a171b;
+  border-color: #1a171b;
+  color: #e8d7bb; }
+  .section.portfolio-single #gridItemView #gridItemLayout #next:hover {
+    color: #1a171b;
+    background-color: #e8d7bb;
+    border-color: #e8d7bb; }
+
+.section.single-service.author-support .container .breadcrumbs {
+  color: #1a171b; }
+  .section.single-service.author-support .container .breadcrumbs span:first-child {
+    color: #e8d7bb; }
+
+.section.single-service.author-support .container .page-header .section-header {
+  color: #fff; }
+
+.section.single-service.author-support .container .page-header .section-header--sup {
+  color: #fff; }
+
+.section.single-service.author-support .container .page-header:before {
+  background-color: #1a171b; }
+
+.section.single-service.author-support .price-list-item.active .price-list--header {
+  color: #e8d7bb; }
+
+.section.single-service.author-support .calc-price-wrapper {
+  background-color: #1a171b;
+  color: #fff; }
+  .section.single-service.author-support .calc-price-wrapper p span {
+    color: #e8d7bb; }
+  .section.single-service.author-support .calc-price-wrapper .btn-arrow {
+    color: #fff; }
+    .section.single-service.author-support .calc-price-wrapper .btn-arrow:after {
+      background-color: #1a171b;
+      color: #fff; }
+
 /***header**/
 #headerModal .modal-content, #headerModalResponse .modal-content {
   background-image: url(../images/modal-bg.png);
@@ -1239,6 +1445,21 @@ a {
     width: 40%;
     float: left;
     margin: 0 0 0 80px; }
+
+.section.single-service.author-support .container .col-md-push-2:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 800px;
+  position: absolute;
+  top: -250px;
+  left: 0;
+  z-index: -1;
+  transform: rotate(90deg);
+  background: url(../images/design.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 30%; }
 
 :focus {
   outline: 0; }
@@ -2292,7 +2513,7 @@ a {
     position: relative;
     z-index: 1;
     max-width: 80%;
-    height: 120px;
+    height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -2325,6 +2546,12 @@ a {
   #footerMenu {
     display: none;
     visibility: hidden; } }
+
+.site-footer .footer .container {
+  padding-top: 0; }
+
+.site-footer .section .container {
+  padding-top: 0; }
 
 /***END footer**/
 .section.title-section .container:before {
@@ -2494,7 +2721,7 @@ a {
     display: block;
     width: 40%;
     float: left;
-    margin: 0 0 0 80px; }
+    margin: 20px 0 0 80px; }
 
 .section.category-blog .container > div {
   top: -100px; }
@@ -2633,3 +2860,226 @@ a {
         height: auto;
         padding: 15px;
         transition: all 0.3s ease-in-out; }
+
+.section.portfolio-single .container:before {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  left: -134px;
+  right: -136px;
+  top: 0;
+  bottom: 0; }
+
+.section.portfolio-single .container .breadcrumbs span {
+  margin: 0 0.5rem; }
+
+.section.portfolio-single .container .page-header {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding-top: 40px;
+  border: 0; }
+  .section.portfolio-single .container .page-header .section-header--sup {
+    display: block;
+    top: 132px;
+    left: 20px; }
+  .section.portfolio-single .container .page-header .section-header {
+    display: block;
+    width: 200px;
+    float: left;
+    margin: 0 0 0 80px; }
+
+.section.portfolio-single p {
+  padding: 30px; }
+
+.section.portfolio-single .grid-item img {
+  filter: grayscale(1); }
+  .section.portfolio-single .grid-item img:hover {
+    filter: grayscale(0); }
+
+.section.portfolio-single #gridItemView #gridItemLayout img {
+  width: 100%; }
+
+.section.portfolio-single #gridItemView #gridItemLayout .modal-escape {
+  position: absolute;
+  top: -15px;
+  right: -15px; }
+
+.section.portfolio-single #gridItemView #gridItemLayout #prev {
+  position: absolute;
+  top: 50%;
+  left: 20px; }
+
+.section.portfolio-single #gridItemView #gridItemLayout #next {
+  position: absolute;
+  top: 50%;
+  right: 20px; }
+
+.section.portfolio-single #gridItemView #gridItemLayout button {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0 0.35rem; }
+
+.section.single-service.author-support .container:before {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  left: -134px;
+  right: -136px;
+  top: 0;
+  bottom: 0; }
+
+.section.single-service.author-support .container .breadcrumbs {
+  margin-bottom: 50px; }
+  .section.single-service.author-support .container .breadcrumbs span {
+    margin: 0 0.5rem; }
+
+.section.single-service.author-support .container .page-header {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding-top: 40px;
+  border: 0; }
+  .section.single-service.author-support .container .page-header .section-header--sup {
+    display: block;
+    top: 160px;
+    left: 20px;
+    z-index: 3; }
+  .section.single-service.author-support .container .page-header .section-header {
+    position: relative;
+    display: block;
+    width: 200px;
+    float: left;
+    margin: 100px 0 0 80px;
+    z-index: 3; }
+  .section.single-service.author-support .container .page-header:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 350px;
+    z-index: 2;
+    left: -50%;
+    top: 0; }
+
+.section.single-service.author-support .hero-header-wrapper {
+  max-height: 800px;
+  overflow: hidden; }
+  .section.single-service.author-support .hero-header-wrapper img {
+    max-width: 100%; }
+
+.section.single-service.author-support .necessarity .section-header {
+  padding: 40px; }
+  .section.single-service.author-support .necessarity .section-header .section-title {
+    padding: 0;
+    margin: 0;
+    display: block;
+    width: 80%; }
+
+.section.single-service.author-support .necessarity p {
+  padding-left: 40px; }
+
+.section.single-service.author-support .necessarity .col-xs-push-0 {
+  position: relative;
+  padding: 50px 0; }
+
+.section.single-service.author-support .service-features .service-feature-item {
+  position: relative;
+  width: 33%;
+  float: left;
+  padding: 30px 50px; }
+  .section.single-service.author-support .service-features .service-feature-item .service-feature-count {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 0.5rem; }
+
+.section.single-service.author-support .calc-price .calc-price-wrapper {
+  padding: 50px 100px;
+  margin: 100px 0; }
+  .section.single-service.author-support .calc-price .calc-price-wrapper .price-list {
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    height: 280px;
+    overflow: visible;
+    position: relative;
+    transition: all 0.3s ease-in-out; }
+    .section.single-service.author-support .calc-price .calc-price-wrapper .price-list > .price-list-item {
+      position: relative;
+      width: 85%;
+      height: 45px;
+      padding: 0;
+      transition: all 0.3s ease-in-out; }
+      .section.single-service.author-support .calc-price .calc-price-wrapper .price-list > .price-list-item > .price-list--header {
+        opacity: 1;
+        display: block;
+        padding-right: 10px;
+        transition: all 0.3s ease-in-out; }
+        .section.single-service.author-support .calc-price .calc-price-wrapper .price-list > .price-list-item > .price-list--header:before {
+          margin: 0 5px; }
+    .section.single-service.author-support .calc-price .calc-price-wrapper .price-list.price-list__collapsed {
+      height: 45px;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out; }
+      .section.single-service.author-support .calc-price .calc-price-wrapper .price-list.price-list__collapsed:before {
+        transform: rotate(135deg);
+        transition: all 0.3s ease-in-out; }
+      .section.single-service.author-support .calc-price .calc-price-wrapper .price-list.price-list__collapsed .price-list-item {
+        height: 0;
+        transition: all 0.3s ease-in-out; }
+        .section.single-service.author-support .calc-price .calc-price-wrapper .price-list.price-list__collapsed .price-list-item .price-list--header {
+          opacity: 0;
+          display: none;
+          padding-right: 10px;
+          transition: all 0.3s ease-in-out; }
+        .section.single-service.author-support .calc-price .calc-price-wrapper .price-list.price-list__collapsed .price-list-item.active {
+          height: 100px; }
+          .section.single-service.author-support .calc-price .calc-price-wrapper .price-list.price-list__collapsed .price-list-item.active > .price-list--header {
+            opacity: 1;
+            display: block;
+            padding-right: 10px; }
+    .section.single-service.author-support .calc-price .calc-price-wrapper .price-list:before {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 35px;
+      right: 5px;
+      border-style: solid;
+      border-width: 0 0 0.25em 0.25em;
+      height: 1rem;
+      transform: rotate(-45deg);
+      vertical-align: top;
+      width: 1rem; }
+  .section.single-service.author-support .calc-price .calc-price-wrapper .price-item--description-wrapper {
+    position: relative;
+    min-height: 300px;
+    padding: 0; }
+    .section.single-service.author-support .calc-price .calc-price-wrapper .price-item--description-wrapper .price-item--description {
+      padding: 0;
+      margin: 0; }
+      .section.single-service.author-support .calc-price .calc-price-wrapper .price-item--description-wrapper .price-item--description > .price-item {
+        visibility: hidden;
+        height: 0; }
+        .section.single-service.author-support .calc-price .calc-price-wrapper .price-item--description-wrapper .price-item--description > .price-item.visible {
+          visibility: visible;
+          height: auto;
+          padding: 20px 0; }
+      .section.single-service.author-support .calc-price .calc-price-wrapper .price-item--description-wrapper .price-item--description p {
+        display: block;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        margin: 12px 0; }
+        .section.single-service.author-support .calc-price .calc-price-wrapper .price-item--description-wrapper .price-item--description p:first-child {
+          margin-bottom: 30px; }
+      .section.single-service.author-support .calc-price .calc-price-wrapper .price-item--description-wrapper .price-item--description .btn-arrow {
+        display: block;
+        position: relative;
+        padding: 1.33rem;
+        margin-top: 30px;
+        text-align: center; }
